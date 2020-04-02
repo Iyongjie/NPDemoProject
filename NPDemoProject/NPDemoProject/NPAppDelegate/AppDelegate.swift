@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = mainTabBarVC
         self.window?.makeKeyAndVisible()
         
-        print(IOS9_OR_LATER)
+        print(kIOS9_OR_LATER)
         return true
     }
 

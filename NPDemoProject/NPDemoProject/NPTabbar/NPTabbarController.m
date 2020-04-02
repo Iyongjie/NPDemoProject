@@ -19,12 +19,8 @@
 @implementation NPTabbarController
 
 - (instancetype)initWithContext:(NSString *)context {
-    /**
-     * 以下两行代码目的在于手动设置让TabBarItem只显示图标，不显示文字，并让图标垂直居中。
-     * 等 效于在 `-tabBarItemsAttributesForController` 方法中不传 `CYLTabBarItemTitle` 字段。
-     * 更推荐后一种做法。
-     */
-    UIEdgeInsets imageInsets = UIEdgeInsetsMake(0, 0, 0, 0);   // UIEdgeInsetsZero
+    
+    UIEdgeInsets imageInsets = UIEdgeInsetsMake(0, 0, 0, 0);
     UIOffset titlePositionAdjustment = UIOffsetMake(0, 0);
     if (self = [super initWithViewControllers:[self viewControllersForTabBar]
                         tabBarItemsAttributes:[self tabBarItemsAttributesForTabBar]
@@ -52,20 +48,8 @@
     homeVC.navigationController.navigationBar.hidden = YES;
     [homeVC cyl_setHideNavigationBarSeparator:YES];
    
-    NPShopViewController *shopVC = [[NPShopViewController alloc] init];
-    NPNavigationController *shopNav = [[NPNavigationController alloc]
-                                                    initWithRootViewController:shopVC];
-    shopVC.navigationController.navigationBar.hidden = YES;
-    [shopVC cyl_setHideNavigationBarSeparator:YES];
-    
-    NPMineViewController *mineVC = [[NPMineViewController alloc] init];
-    NPNavigationController *mineNav = [[NPNavigationController alloc]       initWithRootViewController:mineVC];
-    mineVC.navigationController.navigationBar.hidden = YES;
-    [mineNav cyl_setHideNavigationBarSeparator:YES];
     NSArray *viewControllers = @[
-                                 homeNav,
-                                 shopNav,
-                                 mineNav
+                                 homeNav
                                  ];
     return viewControllers;
 }
@@ -76,28 +60,16 @@
                                                  CYLTabBarItemImage : @"tab_home_unselected",
                                                  CYLTabBarItemSelectedImage : @"tab_home_selected"
     };
-    NSDictionary *secondTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"商城",
-                                                  CYLTabBarItemImage :@"tab_shop_unselected",
-                                                  CYLTabBarItemSelectedImage : @"tab_shop_selected"
-    };
-    NSDictionary *fourthTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"我的",
-                                                  CYLTabBarItemImage :@"tab_mine_unselected",
-                                                  CYLTabBarItemSelectedImage : @"tab_mine_selected"
-    };
-    NSArray *tabBarItemsAttributes = @[firstTabBarItemsAttributes,
-                                       secondTabBarItemsAttributes,
-                                       fourthTabBarItemsAttributes
+    
+    NSArray *tabBarItemsAttributes = @[firstTabBarItemsAttributes
                                        ];
     return tabBarItemsAttributes;
 }
 
 /**
- *  更多TabBar自定义设置：比如：tabBarItem 的选中和不选中文字和背景图片属性、tabbar 背景图片属性等等
+ *  TabBar自定义设置
  */
 - (void)customizeTabBarAppearance {
-    // Customize UITabBar height
     // 自定义 TabBar 高度
      self.tabBarHeight = CYLTabBarControllerHeight;
     [self rootWindow].backgroundColor = [UIColor whiteColor];
@@ -114,7 +86,7 @@
     UITabBarItem *tabBar = [UITabBarItem appearance];
     [tabBar setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
     [tabBar setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
-//    [self hideTabBarShadowImageView];
+    [self hideTabBarShadowImageView];
     
     [[UITabBar appearance] setBackgroundImage:[self imageWithColor:[UIColor whiteColor] size:self.tabBar.bounds.size]];
 }
@@ -157,8 +129,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     NSLog(@"🔴类名与方法名：%@（在第%@行），描述：%@", @(__PRETTY_FUNCTION__), @(__LINE__), @"");
 }
-
-
+ 
 //缩放动画
 - (void)addOnceScaleAnimationOnView:(UIView *)animationView {
     //需要实现的帧动画，这里根据需求自定义

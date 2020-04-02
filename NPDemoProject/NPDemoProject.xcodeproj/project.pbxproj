@@ -8,16 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2A808E57BAA25D794AF8B7B1 /* Pods_NPDemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE16FE94CD8B084230419C66 /* Pods_NPDemoProject.framework */; };
+		B73F5FD7243329BD00C70017 /* String+Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F5FD6243329BD00C70017 /* String+Additional.swift */; };
+		B73F5FD924332A0100C70017 /* UIImage+Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F5FD824332A0100C70017 /* UIImage+Additional.swift */; };
+		B73F5FDB2433308100C70017 /* NPHomeDataHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F5FDA2433308100C70017 /* NPHomeDataHandle.swift */; };
+		B73F5FDD243330A900C70017 /* NPHomeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F5FDC243330A900C70017 /* NPHomeDataModel.swift */; };
+		B73F5FE3243334E300C70017 /* NPHomeCourseLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F5FE2243334E300C70017 /* NPHomeCourseLayout.swift */; };
+		B73F5FE5243334F600C70017 /* NPHomeCourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F5FE4243334F600C70017 /* NPHomeCourseTableViewCell.swift */; };
 		B795081C241913F6007BE1EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795081B241913F6007BE1EA /* AppDelegate.swift */; };
 		B7950825241913FB007BE1EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7950824241913FB007BE1EA /* Assets.xcassets */; };
 		B7950828241913FB007BE1EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7950826241913FB007BE1EA /* LaunchScreen.storyboard */; };
 		B7950851241923BB007BE1EA /* NPColorAndFontConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950850241923BB007BE1EA /* NPColorAndFontConst.swift */; };
 		B7950853241925BD007BE1EA /* NPSystemConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950852241925BD007BE1EA /* NPSystemConst.swift */; };
 		B7950866241928C5007BE1EA /* NPSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950865241928C5007BE1EA /* NPSearchViewController.swift */; };
-		B795087224192C33007BE1EA /* MHDLoginDataHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795087124192C33007BE1EA /* MHDLoginDataHandle.swift */; };
-		B795087424192C6C007BE1EA /* NPLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795087324192C6C007BE1EA /* NPLoginViewController.swift */; };
-		B7950883241935A9007BE1EA /* NPMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950882241935A9007BE1EA /* NPMineViewController.swift */; };
-		B7950888241935CC007BE1EA /* NPShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950887241935CC007BE1EA /* NPShopViewController.swift */; };
 		B795088A241935DD007BE1EA /* NPHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950889241935DD007BE1EA /* NPHomeViewController.swift */; };
 		B795089024193FE7007BE1EA /* NPPlateformKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795088F24193FE7007BE1EA /* NPPlateformKey.swift */; };
 		B79508922419402D007BE1EA /* NPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79508912419402D007BE1EA /* NPApi.swift */; };
@@ -28,6 +30,12 @@
 
 /* Begin PBXFileReference section */
 		26876443DEF97E31E1DBAA14 /* Pods-NPDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPDemoProject.debug.xcconfig"; path = "Target Support Files/Pods-NPDemoProject/Pods-NPDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
+		B73F5FD6243329BD00C70017 /* String+Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Additional.swift"; sourceTree = "<group>"; };
+		B73F5FD824332A0100C70017 /* UIImage+Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Additional.swift"; sourceTree = "<group>"; };
+		B73F5FDA2433308100C70017 /* NPHomeDataHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPHomeDataHandle.swift; sourceTree = "<group>"; };
+		B73F5FDC243330A900C70017 /* NPHomeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPHomeDataModel.swift; sourceTree = "<group>"; };
+		B73F5FE2243334E300C70017 /* NPHomeCourseLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPHomeCourseLayout.swift; sourceTree = "<group>"; };
+		B73F5FE4243334F600C70017 /* NPHomeCourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPHomeCourseTableViewCell.swift; sourceTree = "<group>"; };
 		B7950818241913F6007BE1EA /* NPDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B795081B241913F6007BE1EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7950824241913FB007BE1EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,11 +44,7 @@
 		B7950850241923BB007BE1EA /* NPColorAndFontConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPColorAndFontConst.swift; sourceTree = "<group>"; };
 		B7950852241925BD007BE1EA /* NPSystemConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSystemConst.swift; sourceTree = "<group>"; };
 		B7950865241928C5007BE1EA /* NPSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSearchViewController.swift; sourceTree = "<group>"; };
-		B795087124192C33007BE1EA /* MHDLoginDataHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHDLoginDataHandle.swift; sourceTree = "<group>"; };
-		B795087324192C6C007BE1EA /* NPLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPLoginViewController.swift; sourceTree = "<group>"; };
 		B795087624193284007BE1EA /* NPDemoProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NPDemoProject-Bridging-Header.h"; sourceTree = "<group>"; };
-		B7950882241935A9007BE1EA /* NPMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPMineViewController.swift; sourceTree = "<group>"; };
-		B7950887241935CC007BE1EA /* NPShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPShopViewController.swift; sourceTree = "<group>"; };
 		B7950889241935DD007BE1EA /* NPHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPHomeViewController.swift; sourceTree = "<group>"; };
 		B795088F24193FE7007BE1EA /* NPPlateformKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPPlateformKey.swift; sourceTree = "<group>"; };
 		B79508912419402D007BE1EA /* NPApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPApi.swift; sourceTree = "<group>"; };
@@ -72,6 +76,104 @@
 				C49E06B688967851F2938A80 /* Pods-NPDemoProject.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B73F5FCC243323EE00C70017 /* ViewBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5FCE243323FD00C70017 /* Views */,
+				B73F5FCD243323F600C70017 /* ViewLayout */,
+			);
+			path = ViewBuilder;
+			sourceTree = "<group>";
+		};
+		B73F5FCD243323F600C70017 /* ViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5FE2243334E300C70017 /* NPHomeCourseLayout.swift */,
+			);
+			path = ViewLayout;
+			sourceTree = "<group>";
+		};
+		B73F5FCE243323FD00C70017 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5FE4243334F600C70017 /* NPHomeCourseTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B73F5FCF2433240500C70017 /* DataFlow */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5FD02433240C00C70017 /* DataHandle */,
+				B73F5FD12433241200C70017 /* Models */,
+			);
+			path = DataFlow;
+			sourceTree = "<group>";
+		};
+		B73F5FD02433240C00C70017 /* DataHandle */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5FDA2433308100C70017 /* NPHomeDataHandle.swift */,
+			);
+			path = DataHandle;
+			sourceTree = "<group>";
+		};
+		B73F5FD12433241200C70017 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5FDC243330A900C70017 /* NPHomeDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B73F5FD2243324D900C70017 /* NPNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5FE72433355600C70017 /* core */,
+				B73F5FE62433354F00C70017 /* plugins */,
+			);
+			path = NPNetwork;
+			sourceTree = "<group>";
+		};
+		B73F5FD3243326AB00C70017 /* NPCategory */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5FD5243326BA00C70017 /* Foundation */,
+				B73F5FD4243326B500C70017 /* UIKit */,
+			);
+			path = NPCategory;
+			sourceTree = "<group>";
+		};
+		B73F5FD4243326B500C70017 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5FD824332A0100C70017 /* UIImage+Additional.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		B73F5FD5243326BA00C70017 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5FD6243329BD00C70017 /* String+Additional.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		B73F5FE62433354F00C70017 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		B73F5FE72433355600C70017 /* core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = core;
 			sourceTree = "<group>";
 		};
 		B795080F241913F6007BE1EA = {
@@ -126,9 +228,6 @@
 		B795083124191759007BE1EA /* NPModules */ = {
 			isa = PBXGroup;
 			children = (
-				B795083F241921C0007BE1EA /* NPLogin */,
-				B7950834241920C5007BE1EA /* NPMine */,
-				B7950833241920BE007BE1EA /* NPShop */,
 				B7950832241920A6007BE1EA /* NPHome */,
 			);
 			path = NPModules;
@@ -138,29 +237,9 @@
 			isa = PBXGroup;
 			children = (
 				B795085D24192856007BE1EA /* Home */,
-				B795085E2419286A007BE1EA /* Player */,
 				B795085C24192837007BE1EA /* Search */,
 			);
 			path = NPHome;
-			sourceTree = "<group>";
-		};
-		B7950833241920BE007BE1EA /* NPShop */ = {
-			isa = PBXGroup;
-			children = (
-				B7950884241935B5007BE1EA /* Shop */,
-				B795084124192242007BE1EA /* ShopeDetail */,
-			);
-			path = NPShop;
-			sourceTree = "<group>";
-		};
-		B7950834241920C5007BE1EA /* NPMine */ = {
-			isa = PBXGroup;
-			children = (
-				B795087A24193554007BE1EA /* Mine */,
-				B795086D24192929007BE1EA /* ShopCart */,
-				B795083D241921A7007BE1EA /* Message */,
-			);
-			path = NPMine;
 			sourceTree = "<group>";
 		};
 		B7950835241920C9007BE1EA /* NPTabbar */ = {
@@ -177,33 +256,11 @@
 		B7950837241920E1007BE1EA /* NPBaseKit */ = {
 			isa = PBXGroup;
 			children = (
+				B73F5FD3243326AB00C70017 /* NPCategory */,
+				B73F5FD2243324D900C70017 /* NPNetwork */,
 				B795084F241923A1007BE1EA /* NPConst */,
 			);
 			path = NPBaseKit;
-			sourceTree = "<group>";
-		};
-		B795083D241921A7007BE1EA /* Message */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Message;
-			sourceTree = "<group>";
-		};
-		B795083F241921C0007BE1EA /* NPLogin */ = {
-			isa = PBXGroup;
-			children = (
-				B795087024192C11007BE1EA /* DataHandle */,
-				B795086F24192AC7007BE1EA /* Controller */,
-				B795086A241928FD007BE1EA /* ViewBuilder */,
-			);
-			path = NPLogin;
-			sourceTree = "<group>";
-		};
-		B795084124192242007BE1EA /* ShopeDetail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ShopeDetail;
 			sourceTree = "<group>";
 		};
 		B795084F241923A1007BE1EA /* NPConst */ = {
@@ -231,24 +288,11 @@
 		B795085D24192856007BE1EA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B73F5FCF2433240500C70017 /* DataFlow */,
+				B73F5FCC243323EE00C70017 /* ViewBuilder */,
 				B795086024192897007BE1EA /* Controller */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		B795085E2419286A007BE1EA /* Player */ = {
-			isa = PBXGroup;
-			children = (
-				B795085F24192891007BE1EA /* Controller */,
-			);
-			path = Player;
-			sourceTree = "<group>";
-		};
-		B795085F24192891007BE1EA /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		B795086024192897007BE1EA /* Controller */ = {
@@ -311,116 +355,6 @@
 			children = (
 			);
 			path = ViewLayout;
-			sourceTree = "<group>";
-		};
-		B795086A241928FD007BE1EA /* ViewBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				B795086C2419290E007BE1EA /* ViewLayout */,
-				B795086B2419290A007BE1EA /* Views */,
-			);
-			path = ViewBuilder;
-			sourceTree = "<group>";
-		};
-		B795086B2419290A007BE1EA /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		B795086C2419290E007BE1EA /* ViewLayout */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewLayout;
-			sourceTree = "<group>";
-		};
-		B795086D24192929007BE1EA /* ShopCart */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ShopCart;
-			sourceTree = "<group>";
-		};
-		B795086F24192AC7007BE1EA /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B795087324192C6C007BE1EA /* NPLoginViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B795087024192C11007BE1EA /* DataHandle */ = {
-			isa = PBXGroup;
-			children = (
-				B795087124192C33007BE1EA /* MHDLoginDataHandle.swift */,
-			);
-			path = DataHandle;
-			sourceTree = "<group>";
-		};
-		B795087A24193554007BE1EA /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				B795087C2419357A007BE1EA /* ViewBuilder */,
-				B795087B24193575007BE1EA /* Controller */,
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		B795087B24193575007BE1EA /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B7950882241935A9007BE1EA /* NPMineViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B795087C2419357A007BE1EA /* ViewBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				B795087E24193589007BE1EA /* ViewLayout */,
-				B795087D24193583007BE1EA /* Views */,
-			);
-			path = ViewBuilder;
-			sourceTree = "<group>";
-		};
-		B795087D24193583007BE1EA /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		B795087E24193589007BE1EA /* ViewLayout */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewLayout;
-			sourceTree = "<group>";
-		};
-		B7950884241935B5007BE1EA /* Shop */ = {
-			isa = PBXGroup;
-			children = (
-				B7950886241935BE007BE1EA /* ViewBuilder */,
-				B7950885241935B9007BE1EA /* Controller */,
-			);
-			path = Shop;
-			sourceTree = "<group>";
-		};
-		B7950885241935B9007BE1EA /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B7950887241935CC007BE1EA /* NPShopViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B7950886241935BE007BE1EA /* ViewBuilder */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewBuilder;
 			sourceTree = "<group>";
 		};
 		BE140C5C0B562510EA0C211B /* Frameworks */ = {
@@ -546,18 +480,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73F5FE3243334E300C70017 /* NPHomeCourseLayout.swift in Sources */,
 				B7950853241925BD007BE1EA /* NPSystemConst.swift in Sources */,
 				B795089A24194250007BE1EA /* NPTabbarController.m in Sources */,
-				B7950883241935A9007BE1EA /* NPMineViewController.swift in Sources */,
-				B795087224192C33007BE1EA /* MHDLoginDataHandle.swift in Sources */,
-				B795087424192C6C007BE1EA /* NPLoginViewController.swift in Sources */,
+				B73F5FDD243330A900C70017 /* NPHomeDataModel.swift in Sources */,
 				B795089024193FE7007BE1EA /* NPPlateformKey.swift in Sources */,
+				B73F5FE5243334F600C70017 /* NPHomeCourseTableViewCell.swift in Sources */,
+				B73F5FDB2433308100C70017 /* NPHomeDataHandle.swift in Sources */,
 				B7950851241923BB007BE1EA /* NPColorAndFontConst.swift in Sources */,
 				B79508922419402D007BE1EA /* NPApi.swift in Sources */,
 				B7950897241941F0007BE1EA /* NPNavigationController.m in Sources */,
+				B73F5FD7243329BD00C70017 /* String+Additional.swift in Sources */,
 				B795088A241935DD007BE1EA /* NPHomeViewController.swift in Sources */,
+				B73F5FD924332A0100C70017 /* UIImage+Additional.swift in Sources */,
 				B79508942419405C007BE1EA /* NPDeviceConst.swift in Sources */,
-				B7950888241935CC007BE1EA /* NPShopViewController.swift in Sources */,
 				B795081C241913F6007BE1EA /* AppDelegate.swift in Sources */,
 				B7950866241928C5007BE1EA /* NPSearchViewController.swift in Sources */,
 			);

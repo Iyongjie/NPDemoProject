@@ -19,8 +19,8 @@ public let kAppDisplayName = (kAppBundleInfoVersion["CFBundleDisplayName"] as? S
 // MARK: 系统版本
 public let kVersion = (UIDevice.current.systemVersion as NSString).floatValue
 public let kIOS_Base = 8.0
-public let IOS8_OR_LATER = ( (Double(UIDevice.current.systemVersion) ?? kIOS_Base) > 8.0 ) ? true : false;
-public let IOS9_OR_LATER = ((Double(UIDevice.current.systemVersion) ?? kIOS_Base) >= 9.0 ) ? true : false;
-public let IOS10_OR_LATER = ((Double(UIDevice.current.systemVersion) ?? kIOS_Base) >= 10.0 ) ? true : false;
-public let IOS11_OR_LATER = ((Double(UIDevice.current.systemVersion) ?? kIOS_Base) >= 11.0 ) ? true : false;
-public let IOS12_OR_LATER = ((Double(UIDevice.current.systemVersion) ?? kIOS_Base) >= 12.0 ) ? true : false;
+public let kIOS8_OR_LATER = ( (Double(UIDevice.current.systemVersion) ?? kIOS_Base) > 8.0 ) ? true : false;
+public let kIOS9_OR_LATER = ((Double(UIDevice.current.systemVersion) ?? kIOS_Base) >= 9.0 ) ? true : false;
+public let kIOS10_OR_LATER = ((Double(UIDevice.current.systemVersion) ?? kIOS_Base) >= 10.0 ) ? true : false;
+public let kIOS11_OR_LATER = ((Double(UIDevice.current.systemVersion) ?? kIOS_Base) >= 11.0 ) ? true : false;
+public let kIOS12_OR_LATER = ((Double(UIDevice.current.systemVersion) ?? kIOS_Base) >= 12.0 ) ? true : false;
