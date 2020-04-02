@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NPHomeCourseLayout: NSObject {
+public class NPHomeCourseLayout: NSObject {
     var itemImage: UIImage? // 图片
     var plateNumber: String? // 车牌号
     var alarmTypeName: String? // 报警类型
@@ -21,5 +21,9 @@ class NPHomeCourseLayout: NSObject {
         var layouts = [NPHomeCourseLayout]()
          
         return layouts
+    }
+    
+    public func run() {
+        print("跑步")
     }
 }

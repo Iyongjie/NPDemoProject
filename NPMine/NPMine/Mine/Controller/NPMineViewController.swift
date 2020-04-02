@@ -1,16 +1,15 @@
 //
-//  NPHomeViewController.swift
-//  NPDemoProject
+//  NPMineViewController.swift
+//  NPMine
 //
-//  Created by 李永杰 on 2020/3/11.
+//  Created by 李永杰 on 2020/4/2.
 //  Copyright © 2020 NewPath. All rights reserved.
 //
 
 import UIKit
 import NPBaseKit
-import NPMine
 
-public class NPHomeViewController: UIViewController {
+public class NPMineViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +19,11 @@ public class NPHomeViewController: UIViewController {
     
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("将要出现")
-        NPMineLayout().look()
+        
     }
     
-    func configUI() {
-        self.view.backgroundColor = kAppMainColor
+    func configUI()  {
+        self.view.backgroundColor = RGBAlpa(r: 0.2, g: 0, b: 0.8)
     }
+
 }

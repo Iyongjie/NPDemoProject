@@ -16,6 +16,8 @@
 		B73F73B62435E27600C70017 /* NPPlateformKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73AC2435E27600C70017 /* NPPlateformKey.swift */; };
 		B73F73B72435E27600C70017 /* NPColorAndFontConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73AD2435E27600C70017 /* NPColorAndFontConst.swift */; };
 		B73F73B82435E27600C70017 /* NPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73AE2435E27600C70017 /* NPApi.swift */; };
+		B73F73F32435FAFC00C70017 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F73F12435FAFC00C70017 /* test.m */; };
+		B73F73F42435FC0200C70017 /* test.h in Headers */ = {isa = PBXBuildFile; fileRef = B73F73F02435FAFC00C70017 /* test.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		B73F73AC2435E27600C70017 /* NPPlateformKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPPlateformKey.swift; sourceTree = "<group>"; };
 		B73F73AD2435E27600C70017 /* NPColorAndFontConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPColorAndFontConst.swift; sourceTree = "<group>"; };
 		B73F73AE2435E27600C70017 /* NPApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPApi.swift; sourceTree = "<group>"; };
+		B73F73F02435FAFC00C70017 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		B73F73F12435FAFC00C70017 /* test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 		F3D7587D8A9D2965AD9EBF0A /* Pods-NPDemoProject-NPBaseKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPDemoProject-NPBaseKit.debug.xcconfig"; path = "Target Support Files/Pods-NPDemoProject-NPBaseKit/Pods-NPDemoProject-NPBaseKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +76,8 @@
 				B73F73AF2435E27600C70017 /* NPNetwork */,
 				B73F739C2435DBA500C70017 /* NPBaseKit.h */,
 				B73F739D2435DBA500C70017 /* Info.plist */,
+				B73F73F02435FAFC00C70017 /* test.h */,
+				B73F73F12435FAFC00C70017 /* test.m */,
 			);
 			path = NPBaseKit;
 			sourceTree = "<group>";
@@ -162,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73F739E2435DBA500C70017 /* NPBaseKit.h in Headers */,
+				B73F73F42435FC0200C70017 /* test.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +205,7 @@
 				TargetAttributes = {
 					B73F73982435DBA500C70017 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -260,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73F73B62435E27600C70017 /* NPPlateformKey.swift in Sources */,
+				B73F73F32435FAFC00C70017 /* test.m in Sources */,
 				B73F73B52435E27600C70017 /* NPSystemConst.swift in Sources */,
 				B73F73B72435E27600C70017 /* NPColorAndFontConst.swift in Sources */,
 				B73F73B22435E27600C70017 /* UIImage+Additional.swift in Sources */,
@@ -396,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F3D7587D8A9D2965AD9EBF0A /* Pods-NPDemoProject-NPBaseKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U37C5U97JM;
@@ -414,6 +424,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -423,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3BE1B0746F377C67D284BDF /* Pods-NPDemoProject-NPBaseKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U37C5U97JM;

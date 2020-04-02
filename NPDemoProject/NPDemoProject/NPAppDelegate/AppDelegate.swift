@@ -22,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = mainTabBarVC
         self.window?.makeKeyAndVisible()
         
+        testoc().eat()
+        test().drink()
+        
         return true
     }
 

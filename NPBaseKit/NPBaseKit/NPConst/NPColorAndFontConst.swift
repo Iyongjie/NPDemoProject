@@ -10,10 +10,10 @@
 import Foundation
 import UIKit
 
-let kAppMainColor = HexColorAlpha(rgbValue: 0x2878FF)
+public let kAppMainColor = HexColorAlpha(rgbValue: 0x2878FF)
 
-let kFontRegular = "PingFangSC-Regular"
-let kFontSemiBold = "PingFangSC-Semibold"
+public let kFontRegular = "PingFangSC-Regular"
+public let kFontSemiBold = "PingFangSC-Semibold"
 
 // MARK: 十六进制与alpha来设置颜色值（ 样式： 0xff00ff ）
 public func HexColorAlpha(rgbValue : Int, alpha : Float = 1) -> UIColor {

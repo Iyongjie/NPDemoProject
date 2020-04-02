@@ -9,6 +9,7 @@
 import UIKit
 import CYLTabBarController
 import NPHome
+import NPMine
 
 class NPTabbarController: CYLTabBarController {
  
@@ -18,8 +19,9 @@ class NPTabbarController: CYLTabBarController {
     }
   
     static func viewControllers() -> [UINavigationController]{
-        let home = UINavigationController(rootViewController: NPHomeViewController())
-        let viewControllers = [home]
+        let home = NPNavigationController(rootViewController: NPHomeViewController())
+        let mine = NPNavigationController(rootViewController: NPMineViewController())
+        let viewControllers = [home, mine]
         return viewControllers
     }
     
@@ -28,7 +30,10 @@ class NPTabbarController: CYLTabBarController {
         let tabBarItemHome = [CYLTabBarItemTitle:"首页",
                              CYLTabBarItemImage:"",
                              CYLTabBarItemSelectedImage:""]
-        let tabBarItemsAttributes = [tabBarItemHome]
+        let tabBarItemMine = [CYLTabBarItemTitle:"我的",
+                              CYLTabBarItemImage:"",
+                              CYLTabBarItemSelectedImage:""]
+        let tabBarItemsAttributes = [tabBarItemHome, tabBarItemMine]
         return tabBarItemsAttributes
     }
 
