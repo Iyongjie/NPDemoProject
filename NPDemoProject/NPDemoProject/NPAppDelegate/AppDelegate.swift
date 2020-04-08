@@ -21,10 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = mainTabBarVC
         self.window?.makeKeyAndVisible()
-        
-        testoc().eat()
-        test().drink()
-        
+          
         configNetwork()
         
         return true

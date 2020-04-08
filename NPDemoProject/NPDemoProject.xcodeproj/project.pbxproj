@@ -17,7 +17,6 @@
 		B73F73D82435E9A900C70017 /* NPHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F73D72435E9A900C70017 /* NPHome.framework */; };
 		B73F73EA2435F42D00C70017 /* NPTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73E92435F42D00C70017 /* NPTabbarController.swift */; };
 		B73F73EC2435F95200C70017 /* NPNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73EB2435F95200C70017 /* NPNavigationController.swift */; };
-		B73F73EF2435FA8F00C70017 /* testoc.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F73EE2435FA8F00C70017 /* testoc.m */; };
 		B73F740F2436014200C70017 /* NPMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F740E2436014200C70017 /* NPMine.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +56,6 @@
 		B73F73E52435EFB800C70017 /* NPDemoProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NPDemoProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		B73F73E92435F42D00C70017 /* NPTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPTabbarController.swift; sourceTree = "<group>"; };
 		B73F73EB2435F95200C70017 /* NPNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPNavigationController.swift; sourceTree = "<group>"; };
-		B73F73ED2435FA8F00C70017 /* testoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testoc.h; sourceTree = "<group>"; };
-		B73F73EE2435FA8F00C70017 /* testoc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testoc.m; sourceTree = "<group>"; };
 		B73F740E2436014200C70017 /* NPMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NPMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AFC04A568A037409C6E6D1 /* Pods-NPDemoProject-NPDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPDemoProject-NPDemoProject.release.xcconfig"; path = "Target Support Files/Pods-NPDemoProject-NPDemoProject/Pods-NPDemoProject-NPDemoProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,8 +127,6 @@
 			children = (
 				B73F73DB2435EEAB00C70017 /* NPTabbar */,
 				B73F73DA2435EE4C00C70017 /* NPAppDelegate */,
-				B73F73ED2435FA8F00C70017 /* testoc.h */,
-				B73F73EE2435FA8F00C70017 /* testoc.m */,
 			);
 			path = NPDemoProject;
 			sourceTree = "<group>";
@@ -369,7 +364,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73F73EC2435F95200C70017 /* NPNavigationController.swift in Sources */,
-				B73F73EF2435FA8F00C70017 /* testoc.m in Sources */,
 				B73F73EA2435F42D00C70017 /* NPTabbarController.swift in Sources */,
 				B73F734B2435DB3F00C70017 /* AppDelegate.swift in Sources */,
 			);
