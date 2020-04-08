@@ -14,6 +14,9 @@
 		B73F73D42435E78D00C70017 /* NPHomeCourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73C52435E78D00C70017 /* NPHomeCourseTableViewCell.swift */; };
 		B73F73D52435E78D00C70017 /* NPHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73C72435E78D00C70017 /* NPHomeViewController.swift */; };
 		B73F73D62435E78D00C70017 /* NPSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73D02435E78D00C70017 /* NPSearchViewController.swift */; };
+		B73F742A2436EFE300C70017 /* Target_NPSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F74292436EFE300C70017 /* Target_NPSearch.swift */; };
+		B73F743424370B4300C70017 /* TestHomeView.h in Headers */ = {isa = PBXBuildFile; fileRef = B73F743224370B4300C70017 /* TestHomeView.h */; };
+		B73F743524370B4300C70017 /* TestHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F743324370B4300C70017 /* TestHomeView.m */; };
 		F9D98720E4289308E0AE7E71 /* Pods_NPDemoProject_NPHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9697717BA23F02C639230FA5 /* Pods_NPDemoProject_NPHome.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		B73F73C52435E78D00C70017 /* NPHomeCourseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPHomeCourseTableViewCell.swift; sourceTree = "<group>"; };
 		B73F73C72435E78D00C70017 /* NPHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPHomeViewController.swift; sourceTree = "<group>"; };
 		B73F73D02435E78D00C70017 /* NPSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPSearchViewController.swift; sourceTree = "<group>"; };
+		B73F74292436EFE300C70017 /* Target_NPSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target_NPSearch.swift; sourceTree = "<group>"; };
+		B73F743224370B4300C70017 /* TestHomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHomeView.h; sourceTree = "<group>"; };
+		B73F743324370B4300C70017 /* TestHomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHomeView.m; sourceTree = "<group>"; };
 		FE498F8EB4F162B91A15E1EC /* Pods-NPDemoProject-NPHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPDemoProject-NPHome.release.xcconfig"; path = "Target Support Files/Pods-NPDemoProject-NPHome/Pods-NPDemoProject-NPHome.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +100,7 @@
 		B73F73BB2435E78D00C70017 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B73F74252436EF7100C70017 /* Mediator */,
 				B73F73BC2435E78D00C70017 /* DataFlow */,
 				B73F73C12435E78D00C70017 /* ViewBuilder */,
 				B73F73C62435E78D00C70017 /* Controller */,
@@ -147,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				B73F73C52435E78D00C70017 /* NPHomeCourseTableViewCell.swift */,
+				B73F743224370B4300C70017 /* TestHomeView.h */,
+				B73F743324370B4300C70017 /* TestHomeView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +171,7 @@
 		B73F73C82435E78D00C70017 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				B73F74282436EFC600C70017 /* Mediator */,
 				B73F73C92435E78D00C70017 /* DataFlow */,
 				B73F73CC2435E78D00C70017 /* ViewBuilder */,
 				B73F73CF2435E78D00C70017 /* Controller */,
@@ -223,6 +233,21 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		B73F74252436EF7100C70017 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		B73F74282436EFC600C70017 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				B73F74292436EFE300C70017 /* Target_NPSearch.swift */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -230,6 +255,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73F743424370B4300C70017 /* TestHomeView.h in Headers */,
 				B73F73892435DB7E00C70017 /* NPHome.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +293,7 @@
 				TargetAttributes = {
 					B73F73832435DB7E00C70017 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -328,7 +355,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73F743524370B4300C70017 /* TestHomeView.m in Sources */,
 				B73F73D32435E78D00C70017 /* NPHomeCourseLayout.swift in Sources */,
+				B73F742A2436EFE300C70017 /* Target_NPSearch.swift in Sources */,
 				B73F73D42435E78D00C70017 /* NPHomeCourseTableViewCell.swift in Sources */,
 				B73F73D62435E78D00C70017 /* NPSearchViewController.swift in Sources */,
 				B73F73D22435E78D00C70017 /* NPHomeDataModel.swift in Sources */,
@@ -464,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE2AEF9DA0A5398A39391EDD /* Pods-NPDemoProject-NPHome.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U37C5U97JM;
@@ -482,6 +512,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.newpath.NPHome;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -491,6 +523,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE498F8EB4F162B91A15E1EC /* Pods-NPDemoProject-NPHome.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U37C5U97JM;
@@ -509,6 +542,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.newpath.NPHome;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

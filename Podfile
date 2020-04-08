@@ -10,11 +10,13 @@ abstract_target 'NPDemoProject' do
 	pod 'Kingfisher'
 	pod 'SnapKit'
 	pod 'IQKeyboardManagerSwift'
-	pod 'ObjectMapper'
+  pod 'Moya'
+  pod 'HandyJSON'
 
 	#oc
 	pod 'CYLTabBarController'
 	pod 'LYEmptyView'
+  pod 'CTMediator'
 
     target 'NPDemoProject' do
       	project 'NPDemoProject/NPDemoProject.xcodeproj'

@@ -18,6 +18,20 @@
 		B73F73B82435E27600C70017 /* NPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73AE2435E27600C70017 /* NPApi.swift */; };
 		B73F73F32435FAFC00C70017 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F73F12435FAFC00C70017 /* test.m */; };
 		B73F73F42435FC0200C70017 /* test.h in Headers */ = {isa = PBXBuildFile; fileRef = B73F73F02435FAFC00C70017 /* test.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B73F743A24370EA700C70017 /* UIViewController+Additional.h in Headers */ = {isa = PBXBuildFile; fileRef = B73F743824370EA700C70017 /* UIViewController+Additional.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B73F743B24370EA700C70017 /* UIViewController+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F743924370EA700C70017 /* UIViewController+Additional.m */; };
+		B73F744024370EED00C70017 /* NPNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = B73F743E24370EED00C70017 /* NPNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B73F744124370EED00C70017 /* NPNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F743F24370EED00C70017 /* NPNavigationBar.m */; };
+		B756C0292439A5E9009FE437 /* NPMine_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B756C0282439A5E9009FE437 /* NPMine_Extension.swift */; };
+		B77B83DC243DBDA10088E273 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B83DB243DBDA10088E273 /* Configuration.swift */; };
+		B77B83DE243DBE480088E273 /* TargetType+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B83DD243DBE480088E273 /* TargetType+Rx.swift */; };
+		B77B83E0243DC8750088E273 /* NetworkIndicatorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B83DF243DC8750088E273 /* NetworkIndicatorPlugin.swift */; };
+		B7DD80F9243DA584004A045D /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD80F6243DA584004A045D /* Observable+Response.swift */; };
+		B7DD80FA243DA584004A045D /* MoyaProvider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD80F7243DA584004A045D /* MoyaProvider+Rx.swift */; };
+		B7DD80FB243DA584004A045D /* Single+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD80F8243DA584004A045D /* Single+Response.swift */; };
+		B7DD80FD243DACCC004A045D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD80FC243DACCC004A045D /* API.swift */; };
+		B7DD80FF243DB0F8004A045D /* RXHandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD80FE243DB0F8004A045D /* RXHandyJSON.swift */; };
+		B7DD8101243DB2A8004A045D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD8100243DB2A8004A045D /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +49,20 @@
 		B73F73AE2435E27600C70017 /* NPApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPApi.swift; sourceTree = "<group>"; };
 		B73F73F02435FAFC00C70017 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		B73F73F12435FAFC00C70017 /* test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		B73F743824370EA700C70017 /* UIViewController+Additional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Additional.h"; sourceTree = "<group>"; };
+		B73F743924370EA700C70017 /* UIViewController+Additional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Additional.m"; sourceTree = "<group>"; };
+		B73F743E24370EED00C70017 /* NPNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPNavigationBar.h; sourceTree = "<group>"; };
+		B73F743F24370EED00C70017 /* NPNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPNavigationBar.m; sourceTree = "<group>"; };
+		B756C0282439A5E9009FE437 /* NPMine_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPMine_Extension.swift; sourceTree = "<group>"; };
+		B77B83DB243DBDA10088E273 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		B77B83DD243DBE480088E273 /* TargetType+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetType+Rx.swift"; sourceTree = "<group>"; };
+		B77B83DF243DC8750088E273 /* NetworkIndicatorPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkIndicatorPlugin.swift; sourceTree = "<group>"; };
+		B7DD80F6243DA584004A045D /* Observable+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Response.swift"; sourceTree = "<group>"; };
+		B7DD80F7243DA584004A045D /* MoyaProvider+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Rx.swift"; sourceTree = "<group>"; };
+		B7DD80F8243DA584004A045D /* Single+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+Response.swift"; sourceTree = "<group>"; };
+		B7DD80FC243DACCC004A045D /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B7DD80FE243DB0F8004A045D /* RXHandyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXHandyJSON.swift; sourceTree = "<group>"; };
+		B7DD8100243DB2A8004A045D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		F3D7587D8A9D2965AD9EBF0A /* Pods-NPDemoProject-NPBaseKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPDemoProject-NPBaseKit.debug.xcconfig"; path = "Target Support Files/Pods-NPDemoProject-NPBaseKit/Pods-NPDemoProject-NPBaseKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +99,8 @@
 		B73F739B2435DBA500C70017 /* NPBaseKit */ = {
 			isa = PBXGroup;
 			children = (
+				B73F743C24370EBE00C70017 /* UI */,
+				B73F741E2436EE5700C70017 /* NPMediator */,
 				B73F73A42435E27500C70017 /* NPCategory */,
 				B73F73A92435E27600C70017 /* NPConst */,
 				B73F73AF2435E27600C70017 /* NPNetwork */,
@@ -95,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				B73F73A62435E27500C70017 /* UIImage+Additional.swift */,
+				B73F743824370EA700C70017 /* UIViewController+Additional.h */,
+				B73F743924370EA700C70017 /* UIViewController+Additional.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -122,6 +154,7 @@
 		B73F73AF2435E27600C70017 /* NPNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				B7DD80EF243DA3E0004A045D /* RxMoya */,
 				B73F73B02435E27600C70017 /* core */,
 				B73F73B12435E27600C70017 /* plugins */,
 			);
@@ -131,6 +164,11 @@
 		B73F73B02435E27600C70017 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				B7DD80FC243DACCC004A045D /* API.swift */,
+				B7DD80FE243DB0F8004A045D /* RXHandyJSON.swift */,
+				B7DD8100243DB2A8004A045D /* Network.swift */,
+				B77B83DB243DBDA10088E273 /* Configuration.swift */,
+				B77B83DD243DBE480088E273 /* TargetType+Rx.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -138,8 +176,52 @@
 		B73F73B12435E27600C70017 /* plugins */ = {
 			isa = PBXGroup;
 			children = (
+				B77B83DF243DC8750088E273 /* NetworkIndicatorPlugin.swift */,
 			);
 			path = plugins;
+			sourceTree = "<group>";
+		};
+		B73F741E2436EE5700C70017 /* NPMediator */ = {
+			isa = PBXGroup;
+			children = (
+				B73F74202436EE7400C70017 /* Mine */,
+			);
+			path = NPMediator;
+			sourceTree = "<group>";
+		};
+		B73F74202436EE7400C70017 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				B756C0282439A5E9009FE437 /* NPMine_Extension.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		B73F743C24370EBE00C70017 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B73F743D24370EC700C70017 /* NPNavigationBar */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B73F743D24370EC700C70017 /* NPNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				B73F743E24370EED00C70017 /* NPNavigationBar.h */,
+				B73F743F24370EED00C70017 /* NPNavigationBar.m */,
+			);
+			path = NPNavigationBar;
+			sourceTree = "<group>";
+		};
+		B7DD80EF243DA3E0004A045D /* RxMoya */ = {
+			isa = PBXGroup;
+			children = (
+				B7DD80F7243DA584004A045D /* MoyaProvider+Rx.swift */,
+				B7DD80F6243DA584004A045D /* Observable+Response.swift */,
+				B7DD80F8243DA584004A045D /* Single+Response.swift */,
+			);
+			path = RxMoya;
 			sourceTree = "<group>";
 		};
 		CF7D3ADFF2FF6D65B00F799B /* Frameworks */ = {
@@ -168,6 +250,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73F739E2435DBA500C70017 /* NPBaseKit.h in Headers */,
+				B73F743A24370EA700C70017 /* UIViewController+Additional.h in Headers */,
+				B73F744024370EED00C70017 /* NPNavigationBar.h in Headers */,
 				B73F73F42435FC0200C70017 /* test.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,13 +352,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73F73B62435E27600C70017 /* NPPlateformKey.swift in Sources */,
+				B77B83E0243DC8750088E273 /* NetworkIndicatorPlugin.swift in Sources */,
 				B73F73F32435FAFC00C70017 /* test.m in Sources */,
+				B77B83DE243DBE480088E273 /* TargetType+Rx.swift in Sources */,
 				B73F73B52435E27600C70017 /* NPSystemConst.swift in Sources */,
+				B73F743B24370EA700C70017 /* UIViewController+Additional.m in Sources */,
+				B7DD80FF243DB0F8004A045D /* RXHandyJSON.swift in Sources */,
+				B7DD8101243DB2A8004A045D /* Network.swift in Sources */,
+				B7DD80FA243DA584004A045D /* MoyaProvider+Rx.swift in Sources */,
 				B73F73B72435E27600C70017 /* NPColorAndFontConst.swift in Sources */,
 				B73F73B22435E27600C70017 /* UIImage+Additional.swift in Sources */,
 				B73F73B32435E27600C70017 /* String+Additional.swift in Sources */,
+				B7DD80F9243DA584004A045D /* Observable+Response.swift in Sources */,
 				B73F73B82435E27600C70017 /* NPApi.swift in Sources */,
+				B77B83DC243DBDA10088E273 /* Configuration.swift in Sources */,
+				B7DD80FB243DA584004A045D /* Single+Response.swift in Sources */,
+				B7DD80FD243DACCC004A045D /* API.swift in Sources */,
+				B756C0292439A5E9009FE437 /* NPMine_Extension.swift in Sources */,
 				B73F73B42435E27600C70017 /* NPDeviceConst.swift in Sources */,
+				B73F744124370EED00C70017 /* NPNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

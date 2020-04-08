@@ -17,3 +17,5 @@ FOUNDATION_EXPORT const unsigned char NPBaseKitVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <NPBaseKit/PublicHeader.h>
 
 #import "test.h"
+#import "NPNavigationBar.h"
+#import "UIViewController+Additional.h"

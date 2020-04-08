@@ -18,6 +18,10 @@ class NPTabbarController: CYLTabBarController {
         return tabBarVC
     }
   
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     static func viewControllers() -> [UINavigationController]{
         let home = NPNavigationController(rootViewController: NPHomeViewController())
         let mine = NPNavigationController(rootViewController: NPMineViewController())

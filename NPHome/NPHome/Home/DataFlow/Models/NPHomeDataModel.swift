@@ -7,54 +7,17 @@
 //
 
 import Foundation
-import ObjectMapper
+import HandyJSON
 
-struct NPHomeCarModel: Mappable {
+struct NPHomeCarModel: HandyJSON {
      
-    var deviceType: String?
-    var teamName: String?
-    var vehicleColor: Int?
-    
-    init?(map: Map) {
-            
-    }
-    
-    mutating func mapping(map: Map) {
-        deviceType <- map["deviceType"]
-        teamName <- map["teamName"]
-        vehicleColor <- map["vehicleColor"]
-    }
-    
+    var isDisplay: Int = 0
+    var sort: Int = 0
+    var uid: Int = 0
+    var id: String?
+    var categoryId: Int = 0
+    var isEditor: Int = 0
+    var createdAt: String?
+    var categoryName: String?
 }
-
-struct NPHomeCarChannelModel: Mappable {
-   
-    var rows: [NPHomeCarChannelItemModel]?
-    var total: Int?
-    var page: Int?
-    
-    init?(map: Map) {
-            
-    }
-       
-    mutating func mapping(map: Map) {
-        rows <- map["rows"]
-        total <- map["total"]
-        page <- map["page"]
-    }
-}
-
-struct NPHomeCarChannelItemModel: Mappable {
-    
-    var id: Int?
-    var deviceId: String?
-    
-    init?(map: Map) {
-            
-    }
-    
-    mutating func mapping(map: Map) {
-        id <- map["id"]
-        deviceId <- map["deviceId"]
-    }
-}
+ 

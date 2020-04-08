@@ -25,8 +25,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         testoc().eat()
         test().drink()
         
+        configNetwork()
+        
         return true
     }
 
+    
+    func configNetwork() {
+        Network.Configuration.default.timeoutInterval = 20
+        let indicatorPlugin = NetworkIndicatorPlugin()
+        Network.Configuration.default.plugins = [indicatorPlugin]
+
+    }
 }
 
