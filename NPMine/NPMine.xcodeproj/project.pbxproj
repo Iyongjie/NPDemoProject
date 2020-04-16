@@ -7,122 +7,129 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B73F7404243600CA00C70017 /* NPMine.h in Headers */ = {isa = PBXBuildFile; fileRef = B73F7402243600CA00C70017 /* NPMine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B73F740D2436010500C70017 /* NPMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F740C2436010500C70017 /* NPMineViewController.swift */; };
-		B73F7413243601E300C70017 /* NPMineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F7412243601E300C70017 /* NPMineLayout.swift */; };
-		B756C0272439A594009FE437 /* Target_NPMine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B756C0262439A594009FE437 /* Target_NPMine.swift */; };
+		AC52BF39D38C1130E081CE33 /* Pods_NPDemoProject_NPMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8B6B09667B6050347B5D6C /* Pods_NPDemoProject_NPMine.framework */; };
+		B7CD89C42440649A0085A5C3 /* NPMine.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CD89C22440649A0085A5C3 /* NPMine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7CD89D1244065EC0085A5C3 /* NPMineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD89CC244065EC0085A5C3 /* NPMineLayout.swift */; };
+		B7CD89D3244065EC0085A5C3 /* NPMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD89D0244065EC0085A5C3 /* NPMineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B73F73FF243600CA00C70017 /* NPMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NPMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B73F7402243600CA00C70017 /* NPMine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPMine.h; sourceTree = "<group>"; };
-		B73F7403243600CA00C70017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B73F740C2436010500C70017 /* NPMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPMineViewController.swift; sourceTree = "<group>"; };
-		B73F7412243601E300C70017 /* NPMineLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPMineLayout.swift; sourceTree = "<group>"; };
-		B756C0262439A594009FE437 /* Target_NPMine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target_NPMine.swift; sourceTree = "<group>"; };
+		471D1619AAE5E493AF90C466 /* Pods-NPDemoProject-NPMine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPDemoProject-NPMine.release.xcconfig"; path = "Target Support Files/Pods-NPDemoProject-NPMine/Pods-NPDemoProject-NPMine.release.xcconfig"; sourceTree = "<group>"; };
+		4B8B6B09667B6050347B5D6C /* Pods_NPDemoProject_NPMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NPDemoProject_NPMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7CD89BF2440649A0085A5C3 /* NPMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NPMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7CD89C22440649A0085A5C3 /* NPMine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPMine.h; sourceTree = "<group>"; };
+		B7CD89C32440649A0085A5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7CD89CC244065EC0085A5C3 /* NPMineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPMineLayout.swift; sourceTree = "<group>"; };
+		B7CD89D0244065EC0085A5C3 /* NPMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPMineViewController.swift; sourceTree = "<group>"; };
+		B9920D970F7E58465DC7F687 /* Pods-NPDemoProject-NPMine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPDemoProject-NPMine.debug.xcconfig"; path = "Target Support Files/Pods-NPDemoProject-NPMine/Pods-NPDemoProject-NPMine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B73F73FC243600CA00C70017 /* Frameworks */ = {
+		B7CD89BC2440649A0085A5C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC52BF39D38C1130E081CE33 /* Pods_NPDemoProject_NPMine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B73F73F5243600CA00C70017 = {
+		131C53B79A8BF556A7F036A1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B73F7401243600CA00C70017 /* NPMine */,
-				B73F7400243600CA00C70017 /* Products */,
+				B9920D970F7E58465DC7F687 /* Pods-NPDemoProject-NPMine.debug.xcconfig */,
+				471D1619AAE5E493AF90C466 /* Pods-NPDemoProject-NPMine.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		7B7FF3738EAD0D9F0FC0D5FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B8B6B09667B6050347B5D6C /* Pods_NPDemoProject_NPMine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7CD89B52440649A0085A5C3 = {
+			isa = PBXGroup;
+			children = (
+				B7CD89C12440649A0085A5C3 /* NPMine */,
+				B7CD89C02440649A0085A5C3 /* Products */,
+				131C53B79A8BF556A7F036A1 /* Pods */,
+				7B7FF3738EAD0D9F0FC0D5FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		B73F7400243600CA00C70017 /* Products */ = {
+		B7CD89C02440649A0085A5C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B73F73FF243600CA00C70017 /* NPMine.framework */,
+				B7CD89BF2440649A0085A5C3 /* NPMine.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B73F7401243600CA00C70017 /* NPMine */ = {
+		B7CD89C12440649A0085A5C3 /* NPMine */ = {
 			isa = PBXGroup;
 			children = (
-				B73F740A243600EF00C70017 /* Mine */,
-				B73F7402243600CA00C70017 /* NPMine.h */,
-				B73F7403243600CA00C70017 /* Info.plist */,
+				B7CD89CF244065EC0085A5C3 /* Controller */,
+				B7CD89CA244065EC0085A5C3 /* ViewBuilder */,
+				B7CD89C22440649A0085A5C3 /* NPMine.h */,
+				B7CD89C32440649A0085A5C3 /* Info.plist */,
 			);
 			path = NPMine;
 			sourceTree = "<group>";
 		};
-		B73F740A243600EF00C70017 /* Mine */ = {
+		B7CD89CA244065EC0085A5C3 /* ViewBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				B73F742B2436F02900C70017 /* Mediator */,
-				B73F7410243601CC00C70017 /* ViewBuilder */,
-				B73F740B243600F500C70017 /* Controller */,
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		B73F740B243600F500C70017 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B73F740C2436010500C70017 /* NPMineViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B73F7410243601CC00C70017 /* ViewBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				B73F7411243601D300C70017 /* ViewLayout */,
+				B7CD89CB244065EC0085A5C3 /* ViewLayout */,
 			);
 			path = ViewBuilder;
 			sourceTree = "<group>";
 		};
-		B73F7411243601D300C70017 /* ViewLayout */ = {
+		B7CD89CB244065EC0085A5C3 /* ViewLayout */ = {
 			isa = PBXGroup;
 			children = (
-				B73F7412243601E300C70017 /* NPMineLayout.swift */,
+				B7CD89CC244065EC0085A5C3 /* NPMineLayout.swift */,
 			);
 			path = ViewLayout;
 			sourceTree = "<group>";
 		};
-		B73F742B2436F02900C70017 /* Mediator */ = {
+		B7CD89CF244065EC0085A5C3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B756C0262439A594009FE437 /* Target_NPMine.swift */,
+				B7CD89D0244065EC0085A5C3 /* NPMineViewController.swift */,
 			);
-			path = Mediator;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B73F73FA243600CA00C70017 /* Headers */ = {
+		B7CD89BA2440649A0085A5C3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B73F7404243600CA00C70017 /* NPMine.h in Headers */,
+				B7CD89C42440649A0085A5C3 /* NPMine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B73F73FE243600CA00C70017 /* NPMine */ = {
+		B7CD89BE2440649A0085A5C3 /* NPMine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B73F7407243600CA00C70017 /* Build configuration list for PBXNativeTarget "NPMine" */;
+			buildConfigurationList = B7CD89C72440649A0085A5C3 /* Build configuration list for PBXNativeTarget "NPMine" */;
 			buildPhases = (
-				B73F73FA243600CA00C70017 /* Headers */,
-				B73F73FB243600CA00C70017 /* Sources */,
-				B73F73FC243600CA00C70017 /* Frameworks */,
-				B73F73FD243600CA00C70017 /* Resources */,
+				037225157E7E98F05F4EA71D /* [CP] Check Pods Manifest.lock */,
+				B7CD89BA2440649A0085A5C3 /* Headers */,
+				B7CD89BB2440649A0085A5C3 /* Sources */,
+				B7CD89BC2440649A0085A5C3 /* Frameworks */,
+				B7CD89BD2440649A0085A5C3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -130,25 +137,24 @@
 			);
 			name = NPMine;
 			productName = NPMine;
-			productReference = B73F73FF243600CA00C70017 /* NPMine.framework */;
+			productReference = B7CD89BF2440649A0085A5C3 /* NPMine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B73F73F6243600CA00C70017 /* Project object */ = {
+		B7CD89B62440649A0085A5C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = NewPath;
 				TargetAttributes = {
-					B73F73FE243600CA00C70017 = {
+					B7CD89BE2440649A0085A5C3 = {
 						CreatedOnToolsVersion = 11.4;
-						LastSwiftMigration = 1140;
 					};
 				};
 			};
-			buildConfigurationList = B73F73F9243600CA00C70017 /* Build configuration list for PBXProject "NPMine" */;
+			buildConfigurationList = B7CD89B92440649A0085A5C3 /* Build configuration list for PBXProject "NPMine" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -156,18 +162,18 @@
 				en,
 				Base,
 			);
-			mainGroup = B73F73F5243600CA00C70017;
-			productRefGroup = B73F7400243600CA00C70017 /* Products */;
+			mainGroup = B7CD89B52440649A0085A5C3;
+			productRefGroup = B7CD89C02440649A0085A5C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B73F73FE243600CA00C70017 /* NPMine */,
+				B7CD89BE2440649A0085A5C3 /* NPMine */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B73F73FD243600CA00C70017 /* Resources */ = {
+		B7CD89BD2440649A0085A5C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -176,21 +182,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		037225157E7E98F05F4EA71D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NPDemoProject-NPMine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		B73F73FB243600CA00C70017 /* Sources */ = {
+		B7CD89BB2440649A0085A5C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B756C0272439A594009FE437 /* Target_NPMine.swift in Sources */,
-				B73F7413243601E300C70017 /* NPMineLayout.swift in Sources */,
-				B73F740D2436010500C70017 /* NPMineViewController.swift in Sources */,
+				B7CD89D1244065EC0085A5C3 /* NPMineLayout.swift in Sources */,
+				B7CD89D3244065EC0085A5C3 /* NPMineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B73F7405243600CA00C70017 /* Debug */ = {
+		B7CD89C52440649A0085A5C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -253,7 +283,7 @@
 			};
 			name = Debug;
 		};
-		B73F7406243600CA00C70017 /* Release */ = {
+		B7CD89C62440649A0085A5C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -310,10 +340,10 @@
 			};
 			name = Release;
 		};
-		B73F7408243600CA00C70017 /* Debug */ = {
+		B7CD89C82440649A0085A5C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9920D970F7E58465DC7F687 /* Pods-NPDemoProject-NPMine.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U37C5U97JM;
@@ -333,16 +363,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B73F7409243600CA00C70017 /* Release */ = {
+		B7CD89C92440649A0085A5C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 471D1619AAE5E493AF90C466 /* Pods-NPDemoProject-NPMine.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U37C5U97JM;
@@ -370,25 +399,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B73F73F9243600CA00C70017 /* Build configuration list for PBXProject "NPMine" */ = {
+		B7CD89B92440649A0085A5C3 /* Build configuration list for PBXProject "NPMine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B73F7405243600CA00C70017 /* Debug */,
-				B73F7406243600CA00C70017 /* Release */,
+				B7CD89C52440649A0085A5C3 /* Debug */,
+				B7CD89C62440649A0085A5C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B73F7407243600CA00C70017 /* Build configuration list for PBXNativeTarget "NPMine" */ = {
+		B7CD89C72440649A0085A5C3 /* Build configuration list for PBXNativeTarget "NPMine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B73F7408243600CA00C70017 /* Debug */,
-				B73F7409243600CA00C70017 /* Release */,
+				B7CD89C82440649A0085A5C3 /* Debug */,
+				B7CD89C92440649A0085A5C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B73F73F6243600CA00C70017 /* Project object */;
+	rootObject = B7CD89B62440649A0085A5C3 /* Project object */;
 }

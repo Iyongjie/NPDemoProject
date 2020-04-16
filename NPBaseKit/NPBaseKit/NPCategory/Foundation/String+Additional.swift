@@ -10,15 +10,11 @@ import Foundation
 import UIKit
 public extension String {
     
-  
-    /**
-     Get the height with font.
-     
-     - parameter font:       The font.
-     - parameter fixedWidth: The fixed width.
-     
-     - returns: The height.
-     */
+    /// 字符串高度
+    /// - Parameters:
+    ///   - font: 字体
+    ///   - fixedWidth: 固定宽度
+    /// - Returns: 高度
     func heightWithFont(font : UIFont, fixedWidth : CGFloat) -> CGFloat {
         
         guard count > 0 && fixedWidth > 0 else {

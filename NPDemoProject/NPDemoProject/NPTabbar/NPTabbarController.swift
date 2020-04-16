@@ -10,6 +10,7 @@ import UIKit
 import CYLTabBarController
 import NPHome
 import NPMine
+import URLNavigator
 
 class NPTabbarController: CYLTabBarController {
  
@@ -23,8 +24,10 @@ class NPTabbarController: CYLTabBarController {
     }
     
     static func viewControllers() -> [UINavigationController]{
-        let home = NPNavigationController(rootViewController: NPHomeViewController())
-        let mine = NPNavigationController(rootViewController: NPMineViewController())
+        let app = UIApplication.shared.delegate as! AppDelegate
+        
+        let home = NPNavigationController(rootViewController: NPHomeViewController(navigator: app.navigator!))
+        let mine = NPNavigationController(rootViewController: NPMineViewController(navigator: app.navigator!))
         let viewControllers = [home, mine]
         return viewControllers
     }

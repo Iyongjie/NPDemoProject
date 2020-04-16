@@ -16,7 +16,7 @@ class NPNavigationController: UINavigationController {
         // Do any additional setup after loading the view.
     }
     
-    override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         if gestureRecognizer == self.interactivePopGestureRecognizer {
             if self.viewControllers.count < 2 || self.visibleViewController == self.viewControllers[0] {
                 return  false

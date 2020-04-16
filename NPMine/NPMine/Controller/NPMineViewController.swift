@@ -8,9 +8,20 @@
 
 import UIKit
 import NPBaseKit
+import URLNavigator
 
-public class NPMineViewController: UIViewController {
+public class NPMineViewController: NPBaseViewController {
+    
+    let navigator: NavigatorType
+ 
+    public init(navigator: NavigatorType) {
+      self.navigator = navigator
+      super.init(nibName: nil, bundle: nil)
+    }
 
+    required init?(coder aDecoder: NSCoder) {
+      fatalError("init(coder:) has not been implemented")
+    }
     public override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +34,7 @@ public class NPMineViewController: UIViewController {
     }
     
     func configUI()  {
-        self.view.backgroundColor = RGBAlpa(r: 0.2, g: 0, b: 0.8)
+        self.view.backgroundColor = .yellow
     }
 
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06B7D438A5DD2BD83CE82AF9 /* Pods_NPDemoProject_NPDemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B4A2961D0AA2420444577E /* Pods_NPDemoProject_NPDemoProject.framework */; };
+		B70CDD112448B7DF00FD9340 /* NPNavigationMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70CDD102448B7DF00FD9340 /* NPNavigationMap.swift */; };
 		B73F734B2435DB3F00C70017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F734A2435DB3F00C70017 /* AppDelegate.swift */; };
 		B73F73542435DB4100C70017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B73F73532435DB4100C70017 /* Assets.xcassets */; };
 		B73F73572435DB4100C70017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73F73552435DB4100C70017 /* LaunchScreen.storyboard */; };
@@ -17,7 +18,7 @@
 		B73F73D82435E9A900C70017 /* NPHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F73D72435E9A900C70017 /* NPHome.framework */; };
 		B73F73EA2435F42D00C70017 /* NPTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73E92435F42D00C70017 /* NPTabbarController.swift */; };
 		B73F73EC2435F95200C70017 /* NPNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73EB2435F95200C70017 /* NPNavigationController.swift */; };
-		B73F740F2436014200C70017 /* NPMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F740E2436014200C70017 /* NPMine.framework */; };
+		B7CD89D5244066570085A5C3 /* NPMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CD89D4244066570085A5C3 /* NPMine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		3A1173EA16DB90E36194611C /* Pods-NPDemoProject-NPDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPDemoProject-NPDemoProject.debug.xcconfig"; path = "Target Support Files/Pods-NPDemoProject-NPDemoProject/Pods-NPDemoProject-NPDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		76B4A2961D0AA2420444577E /* Pods_NPDemoProject_NPDemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NPDemoProject_NPDemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70CDD102448B7DF00FD9340 /* NPNavigationMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPNavigationMap.swift; sourceTree = "<group>"; };
 		B73F73472435DB3F00C70017 /* NPDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73F734A2435DB3F00C70017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B73F73532435DB4100C70017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,7 +58,7 @@
 		B73F73E52435EFB800C70017 /* NPDemoProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NPDemoProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		B73F73E92435F42D00C70017 /* NPTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPTabbarController.swift; sourceTree = "<group>"; };
 		B73F73EB2435F95200C70017 /* NPNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPNavigationController.swift; sourceTree = "<group>"; };
-		B73F740E2436014200C70017 /* NPMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NPMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7CD89D4244066570085A5C3 /* NPMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NPMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AFC04A568A037409C6E6D1 /* Pods-NPDemoProject-NPDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPDemoProject-NPDemoProject.release.xcconfig"; path = "Target Support Files/Pods-NPDemoProject-NPDemoProject/Pods-NPDemoProject-NPDemoProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B73F740F2436014200C70017 /* NPMine.framework in Frameworks */,
+				B7CD89D5244066570085A5C3 /* NPMine.framework in Frameworks */,
 				B73F73BA2435E55500C70017 /* NPBaseKit.framework in Frameworks */,
 				B73F73D82435E9A900C70017 /* NPHome.framework in Frameworks */,
 				06B7D438A5DD2BD83CE82AF9 /* Pods_NPDemoProject_NPDemoProject.framework in Frameworks */,
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				B73F734A2435DB3F00C70017 /* AppDelegate.swift */,
+				B70CDD102448B7DF00FD9340 /* NPNavigationMap.swift */,
 			);
 			path = NPAppDelegate;
 			sourceTree = "<group>";
@@ -181,7 +184,7 @@
 		CD03AD5124072B3CC2A6E327 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B73F740E2436014200C70017 /* NPMine.framework */,
+				B7CD89D4244066570085A5C3 /* NPMine.framework */,
 				76B4A2961D0AA2420444577E /* Pods_NPDemoProject_NPDemoProject.framework */,
 				B73F73D72435E9A900C70017 /* NPHome.framework */,
 				B73F73B92435E55500C70017 /* NPBaseKit.framework */,
@@ -363,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B70CDD112448B7DF00FD9340 /* NPNavigationMap.swift in Sources */,
 				B73F73EC2435F95200C70017 /* NPNavigationController.swift in Sources */,
 				B73F73EA2435F42D00C70017 /* NPTabbarController.swift in Sources */,
 				B73F734B2435DB3F00C70017 /* AppDelegate.swift in Sources */,

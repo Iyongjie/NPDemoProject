@@ -12,11 +12,12 @@ abstract_target 'NPDemoProject' do
 	pod 'IQKeyboardManagerSwift'
   pod 'Moya'
   pod 'HandyJSON'
+  pod 'URLNavigator'
 
 	#oc
 	pod 'CYLTabBarController'
 	pod 'LYEmptyView'
-  pod 'CTMediator'
+  
 
     target 'NPDemoProject' do
       	project 'NPDemoProject/NPDemoProject.xcodeproj'
@@ -25,7 +26,11 @@ abstract_target 'NPDemoProject' do
     target 'NPHome' do
       	project 'NPHome/NPHome.xcodeproj'
     end
-
+    
+    target 'NPMine' do
+        project 'NPMine/NPMine.xcodeproj'
+    end
+    
     target 'NPBaseKit' do
       project 'NPBaseKit/NPBaseKit.xcodeproj'
     end
