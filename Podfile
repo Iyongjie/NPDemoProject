@@ -13,12 +13,14 @@ abstract_target 'NPDemoProject' do
   pod 'Moya'
   pod 'HandyJSON'
   pod 'URLNavigator'
-
+  
 	#oc
 	pod 'CYLTabBarController'
 	pod 'LYEmptyView'
   
-
+  #debug
+  pod 'CocoaDebug', :configurations => ['Debug']
+  
     target 'NPDemoProject' do
       	project 'NPDemoProject/NPDemoProject.xcodeproj'
     end

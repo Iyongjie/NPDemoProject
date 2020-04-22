@@ -62,6 +62,9 @@ public class NPHomeViewController: UIViewController {
     @objc func homeToMine() {
         
     }
+    @objc func injected() {
+        self.tableView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+    }
 }
 
 extension NPHomeViewController: UITableViewDelegate, UITableViewDataSource {

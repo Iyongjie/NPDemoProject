@@ -10,6 +10,8 @@ import UIKit
 import NPBaseKit
 import NPHome
 import URLNavigator
+import CocoaDebug
+import FLEX
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,8 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configRouter()
         configRootVC()
         configNetwork()
-        
+        configDebug()
         return true
+    }
+    
+    func configDebug() {
+        #if DEBUG
+        CocoaDebug.enable()
+        FLEXManager.shared()?.showExplorer()
+        #endif
     }
 
     func configRootVC() {

@@ -22,6 +22,7 @@
 		B77B83DE243DBE480088E273 /* TargetType+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B83DD243DBE480088E273 /* TargetType+Rx.swift */; };
 		B77B83E0243DC8750088E273 /* NetworkIndicatorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B83DF243DC8750088E273 /* NetworkIndicatorPlugin.swift */; };
 		B792E7FA244412F200703E68 /* NPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B792E7F9244412F200703E68 /* NPAlert.swift */; };
+		B7C8495A24503F9D002089B9 /* NPDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C8495924503F9D002089B9 /* NPDebug.swift */; };
 		B7CD89DE244070860085A5C3 /* NPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD89DD244070860085A5C3 /* NPBaseViewController.swift */; };
 		B7DD80F9243DA584004A045D /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD80F6243DA584004A045D /* Observable+Response.swift */; };
 		B7DD80FA243DA584004A045D /* MoyaProvider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD80F7243DA584004A045D /* MoyaProvider+Rx.swift */; };
@@ -51,6 +52,7 @@
 		B77B83DD243DBE480088E273 /* TargetType+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetType+Rx.swift"; sourceTree = "<group>"; };
 		B77B83DF243DC8750088E273 /* NetworkIndicatorPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkIndicatorPlugin.swift; sourceTree = "<group>"; };
 		B792E7F9244412F200703E68 /* NPAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPAlert.swift; sourceTree = "<group>"; };
+		B7C8495924503F9D002089B9 /* NPDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPDebug.swift; sourceTree = "<group>"; };
 		B7CD89DD244070860085A5C3 /* NPBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPBaseViewController.swift; sourceTree = "<group>"; };
 		B7DD80F6243DA584004A045D /* Observable+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Response.swift"; sourceTree = "<group>"; };
 		B7DD80F7243DA584004A045D /* MoyaProvider+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Rx.swift"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		B73F739B2435DBA500C70017 /* NPBaseKit */ = {
 			isa = PBXGroup;
 			children = (
+				B7C8495824503F93002089B9 /* NPDebug */,
 				B7CD89DC244070750085A5C3 /* NPBase */,
 				B73F743C24370EBE00C70017 /* UI */,
 				B73F73A42435E27500C70017 /* NPCategory */,
@@ -198,6 +201,14 @@
 				B792E7F9244412F200703E68 /* NPAlert.swift */,
 			);
 			path = NPAlertView;
+			sourceTree = "<group>";
+		};
+		B7C8495824503F93002089B9 /* NPDebug */ = {
+			isa = PBXGroup;
+			children = (
+				B7C8495924503F9D002089B9 /* NPDebug.swift */,
+			);
+			path = NPDebug;
 			sourceTree = "<group>";
 		};
 		B7CD89DC244070750085A5C3 /* NPBase */ = {
@@ -358,6 +369,7 @@
 				B73F73B32435E27600C70017 /* String+Additional.swift in Sources */,
 				B7DD80F9243DA584004A045D /* Observable+Response.swift in Sources */,
 				B73F73B82435E27600C70017 /* NPApi.swift in Sources */,
+				B7C8495A24503F9D002089B9 /* NPDebug.swift in Sources */,
 				B77B83DC243DBDA10088E273 /* Configuration.swift in Sources */,
 				B7DD80FB243DA584004A045D /* Single+Response.swift in Sources */,
 				B7DD80FD243DACCC004A045D /* API.swift in Sources */,
@@ -496,7 +508,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = U37C5U97JM;
+				DEVELOPMENT_TEAM = 42X4872J7N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -526,7 +538,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = U37C5U97JM;
+				DEVELOPMENT_TEAM = 42X4872J7N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
