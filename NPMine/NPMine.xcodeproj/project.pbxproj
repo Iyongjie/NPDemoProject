@@ -3,24 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B043768CA2156B26243EA87 /* Pods_NPDemoProject_NPMineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECF0DFC9775934AAD30D4E1 /* Pods_NPDemoProject_NPMineTests.framework */; };
 		AC52BF39D38C1130E081CE33 /* Pods_NPDemoProject_NPMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8B6B09667B6050347B5D6C /* Pods_NPDemoProject_NPMine.framework */; };
 		B7CD89C42440649A0085A5C3 /* NPMine.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CD89C22440649A0085A5C3 /* NPMine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7CD89D1244065EC0085A5C3 /* NPMineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD89CC244065EC0085A5C3 /* NPMineLayout.swift */; };
 		B7CD89D3244065EC0085A5C3 /* NPMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD89D0244065EC0085A5C3 /* NPMineViewController.swift */; };
+		B7D2618724551FF70030EF30 /* NPMineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D2618624551FF70030EF30 /* NPMineTests.swift */; };
+		B7D2618924551FF70030EF30 /* NPMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CD89BF2440649A0085A5C3 /* NPMine.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B7D2618A24551FF70030EF30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7CD89B62440649A0085A5C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7CD89BE2440649A0085A5C3;
+			remoteInfo = NPMine;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0ECF0DFC9775934AAD30D4E1 /* Pods_NPDemoProject_NPMineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NPDemoProject_NPMineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16A65B89F189CE83DAB297D7 /* Pods-NPDemoProject-NPMineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPDemoProject-NPMineTests.release.xcconfig"; path = "Target Support Files/Pods-NPDemoProject-NPMineTests/Pods-NPDemoProject-NPMineTests.release.xcconfig"; sourceTree = "<group>"; };
 		471D1619AAE5E493AF90C466 /* Pods-NPDemoProject-NPMine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPDemoProject-NPMine.release.xcconfig"; path = "Target Support Files/Pods-NPDemoProject-NPMine/Pods-NPDemoProject-NPMine.release.xcconfig"; sourceTree = "<group>"; };
 		4B8B6B09667B6050347B5D6C /* Pods_NPDemoProject_NPMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NPDemoProject_NPMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A740BF817A9EAFC98E85F453 /* Pods-NPDemoProject-NPMineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPDemoProject-NPMineTests.debug.xcconfig"; path = "Target Support Files/Pods-NPDemoProject-NPMineTests/Pods-NPDemoProject-NPMineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B7CD89BF2440649A0085A5C3 /* NPMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NPMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CD89C22440649A0085A5C3 /* NPMine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPMine.h; sourceTree = "<group>"; };
 		B7CD89C32440649A0085A5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7CD89CC244065EC0085A5C3 /* NPMineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPMineLayout.swift; sourceTree = "<group>"; };
 		B7CD89D0244065EC0085A5C3 /* NPMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPMineViewController.swift; sourceTree = "<group>"; };
+		B7D2618424551FF70030EF30 /* NPMineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NPMineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D2618624551FF70030EF30 /* NPMineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPMineTests.swift; sourceTree = "<group>"; };
+		B7D2618824551FF70030EF30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9920D970F7E58465DC7F687 /* Pods-NPDemoProject-NPMine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPDemoProject-NPMine.debug.xcconfig"; path = "Target Support Files/Pods-NPDemoProject-NPMine/Pods-NPDemoProject-NPMine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,6 +52,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B7D2618124551FF70030EF30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D2618924551FF70030EF30 /* NPMine.framework in Frameworks */,
+				3B043768CA2156B26243EA87 /* Pods_NPDemoProject_NPMineTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +69,8 @@
 			children = (
 				B9920D970F7E58465DC7F687 /* Pods-NPDemoProject-NPMine.debug.xcconfig */,
 				471D1619AAE5E493AF90C466 /* Pods-NPDemoProject-NPMine.release.xcconfig */,
+				A740BF817A9EAFC98E85F453 /* Pods-NPDemoProject-NPMineTests.debug.xcconfig */,
+				16A65B89F189CE83DAB297D7 /* Pods-NPDemoProject-NPMineTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -50,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				4B8B6B09667B6050347B5D6C /* Pods_NPDemoProject_NPMine.framework */,
+				0ECF0DFC9775934AAD30D4E1 /* Pods_NPDemoProject_NPMineTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -58,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				B7CD89C12440649A0085A5C3 /* NPMine */,
+				B7D2618524551FF70030EF30 /* NPMineTests */,
 				B7CD89C02440649A0085A5C3 /* Products */,
 				131C53B79A8BF556A7F036A1 /* Pods */,
 				7B7FF3738EAD0D9F0FC0D5FD /* Frameworks */,
@@ -68,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				B7CD89BF2440649A0085A5C3 /* NPMine.framework */,
+				B7D2618424551FF70030EF30 /* NPMineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +140,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		B7D2618524551FF70030EF30 /* NPMineTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7D2618624551FF70030EF30 /* NPMineTests.swift */,
+				B7D2618824551FF70030EF30 /* Info.plist */,
+			);
+			path = NPMineTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -140,17 +182,41 @@
 			productReference = B7CD89BF2440649A0085A5C3 /* NPMine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		B7D2618324551FF70030EF30 /* NPMineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7D2618E24551FF70030EF30 /* Build configuration list for PBXNativeTarget "NPMineTests" */;
+			buildPhases = (
+				128457ABC9ADFF1A6FF01B24 /* [CP] Check Pods Manifest.lock */,
+				B7D2618024551FF70030EF30 /* Sources */,
+				B7D2618124551FF70030EF30 /* Frameworks */,
+				B7D2618224551FF70030EF30 /* Resources */,
+				7245DBDF012E35797FCE2ADD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7D2618B24551FF70030EF30 /* PBXTargetDependency */,
+			);
+			name = NPMineTests;
+			productName = NPMineTests;
+			productReference = B7D2618424551FF70030EF30 /* NPMineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B7CD89B62440649A0085A5C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = NewPath;
 				TargetAttributes = {
 					B7CD89BE2440649A0085A5C3 = {
 						CreatedOnToolsVersion = 11.4;
+					};
+					B7D2618324551FF70030EF30 = {
+						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
 			};
@@ -168,12 +234,20 @@
 			projectRoot = "";
 			targets = (
 				B7CD89BE2440649A0085A5C3 /* NPMine */,
+				B7D2618324551FF70030EF30 /* NPMineTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B7CD89BD2440649A0085A5C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D2618224551FF70030EF30 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -205,6 +279,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		128457ABC9ADFF1A6FF01B24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NPDemoProject-NPMineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7245DBDF012E35797FCE2ADD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NPDemoProject-NPMineTests/Pods-NPDemoProject-NPMineTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NPDemoProject-NPMineTests/Pods-NPDemoProject-NPMineTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NPDemoProject-NPMineTests/Pods-NPDemoProject-NPMineTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -217,7 +330,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B7D2618024551FF70030EF30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D2618724551FF70030EF30 /* NPMineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7D2618B24551FF70030EF30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = B7CD89BE2440649A0085A5C3 /* NPMine */;
+			targetProxy = B7D2618A24551FF70030EF30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B7CD89C52440649A0085A5C3 /* Debug */ = {
@@ -396,6 +526,44 @@
 			};
 			name = Release;
 		};
+		B7D2618C24551FF70030EF30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A740BF817A9EAFC98E85F453 /* Pods-NPDemoProject-NPMineTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U37C5U97JM;
+				INFOPLIST_FILE = NPMineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.newpath.NPMineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7D2618D24551FF70030EF30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A65B89F189CE83DAB297D7 /* Pods-NPDemoProject-NPMineTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U37C5U97JM;
+				INFOPLIST_FILE = NPMineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.newpath.NPMineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -413,6 +581,15 @@
 			buildConfigurations = (
 				B7CD89C82440649A0085A5C3 /* Debug */,
 				B7CD89C92440649A0085A5C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7D2618E24551FF70030EF30 /* Build configuration list for PBXNativeTarget "NPMineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D2618C24551FF70030EF30 /* Debug */,
+				B7D2618D24551FF70030EF30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

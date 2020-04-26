@@ -12,9 +12,15 @@ open class NPBaseViewController: UIViewController {
     
     open var contentView = UIView()
     
+    open var navigationBar = NPNavigationBar()
+    
     open override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    open func addNavigationBar() {
+    
     }
     
     open func addContentView() {

@@ -11,7 +11,6 @@ import NPBaseKit
 import NPHome
 import URLNavigator
 import CocoaDebug
-import FLEX
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -31,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func configDebug() {
         #if DEBUG
         CocoaDebug.enable()
-        FLEXManager.shared()?.showExplorer()
         #endif
     }
 

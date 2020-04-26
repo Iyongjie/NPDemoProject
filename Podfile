@@ -36,6 +36,18 @@ abstract_target 'NPDemoProject' do
     target 'NPBaseKit' do
       project 'NPBaseKit/NPBaseKit.xcodeproj'
     end
-end
+    
+    target 'NPDemoProjectTests' do
+        project 'NPDemoProject/NPDemoProject.xcodeproj'
+    end
 
+    target 'NPHomeTests' do
+        project 'NPHome/NPHome.xcodeproj'
+    end
+    
+    target 'NPMineTests' do
+        project 'NPMine/NPMine.xcodeproj'
+    end
+     
+end
 
