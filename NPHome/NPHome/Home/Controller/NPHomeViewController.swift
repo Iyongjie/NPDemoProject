@@ -25,6 +25,13 @@ public class NPHomeViewController: UIViewController {
         return table
     }()
     
+    lazy var testLabel: UILabel = {
+        let label = UILabel(frame: CGRect(x: 100, y: 100, width: 150, height: 30))
+        label.textColor = HexColorAlpha("#F09")
+        label.text = "123 火花 abdc"
+        return label
+    }()
+    
     public init(navigator: NavigatorType) {
       self.navigator = navigator
       super.init(nibName: nil, bundle: nil)
@@ -57,6 +64,7 @@ public class NPHomeViewController: UIViewController {
     func configUI() {
         self.view.backgroundColor = kAppMainColor
         self.view.addSubview(self.tableView)
+        self.tableView.addSubview(self.testLabel)
     }
      
     @objc func homeToMine() {

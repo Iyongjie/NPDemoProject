@@ -23,8 +23,13 @@ open class NPBaseViewController: UIViewController {
     
     }
     
+    open func removeNavigationBar() {
+        self.navigationBar.removeFromSuperview()
+        self.contentView.frame = self.view.frame
+    }
+    
     open func addContentView() {
-        contentView = UIView(frame: CGRect(x: 0, y: 88, width: self.view.frame.width, height: self.view.frame.height - 88))
+        contentView = UIView(frame: CGRect(x: 0, y: kNavigationBarHeight, width: self.view.frame.width, height: self.view.frame.height - kNavigationBarHeight))
         contentView.backgroundColor = .yellow
         self.view.addSubview(contentView)
     }

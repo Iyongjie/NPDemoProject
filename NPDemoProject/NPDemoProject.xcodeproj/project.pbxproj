@@ -162,6 +162,7 @@
 		B73F73E62435F1D100C70017 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B7CD55872456A98000C115E9 /* Resources */,
 				B73F73532435DB4100C70017 /* Assets.xcassets */,
 				B73F73552435DB4100C70017 /* LaunchScreen.storyboard */,
 				B73F73582435DB4100C70017 /* Info.plist */,
@@ -169,6 +170,13 @@
 			);
 			name = "Supporting Files";
 			path = NPDemoProject;
+			sourceTree = "<group>";
+		};
+		B7CD55872456A98000C115E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		CD03AD5124072B3CC2A6E327 /* Frameworks */ = {
@@ -194,7 +202,7 @@
 				B73F73432435DB3F00C70017 /* Sources */,
 				B73F73442435DB3F00C70017 /* Frameworks */,
 				B73F73452435DB3F00C70017 /* Resources */,
-				6777399BC368001CA58BAF5C /* [CP] Embed Pods Frameworks */,
+				3D7EB3EC284DFBCE2467217A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,7 +221,7 @@
 				B73F73592435DB4200C70017 /* Sources */,
 				B73F735A2435DB4200C70017 /* Frameworks */,
 				B73F735B2435DB4200C70017 /* Resources */,
-				70177F6FBAF2B8D62E0D1A18 /* [CP] Embed Pods Frameworks */,
+				15DD1CAD7761E79F50314CA4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,6 +291,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		15DD1CAD7761E79F50314CA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NPDemoProject-NPDemoProjectTests/Pods-NPDemoProject-NPDemoProjectTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NPDemoProject-NPDemoProjectTests/Pods-NPDemoProject-NPDemoProjectTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NPDemoProject-NPDemoProjectTests/Pods-NPDemoProject-NPDemoProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1B1661A2897415657B3424B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,7 +330,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6777399BC368001CA58BAF5C /* [CP] Embed Pods Frameworks */ = {
+		3D7EB3EC284DFBCE2467217A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,23 +345,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NPDemoProject-NPDemoProject/Pods-NPDemoProject-NPDemoProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		70177F6FBAF2B8D62E0D1A18 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NPDemoProject-NPDemoProjectTests/Pods-NPDemoProject-NPDemoProjectTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NPDemoProject-NPDemoProjectTests/Pods-NPDemoProject-NPDemoProjectTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NPDemoProject-NPDemoProjectTests/Pods-NPDemoProject-NPDemoProjectTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C91FBC0737E3D36EC2BDF6DE /* [CP] Check Pods Manifest.lock */ = {

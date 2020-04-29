@@ -23,7 +23,11 @@
 		B77B83E0243DC8750088E273 /* NetworkIndicatorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B83DF243DC8750088E273 /* NetworkIndicatorPlugin.swift */; };
 		B792E7FA244412F200703E68 /* NPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B792E7F9244412F200703E68 /* NPAlert.swift */; };
 		B7C8495A24503F9D002089B9 /* NPDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C8495924503F9D002089B9 /* NPDebug.swift */; };
+		B7CD559C24581FBB00C115E9 /* Reachability+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD559A24581FBB00C115E9 /* Reachability+Rx.swift */; };
+		B7CD559D24581FBB00C115E9 /* ObservableType+Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD559B24581FBB00C115E9 /* ObservableType+Reachability.swift */; };
+		B7CD559F24581FCA00C115E9 /* UIColor+Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD559E24581FCA00C115E9 /* UIColor+Additional.swift */; };
 		B7CD89DE244070860085A5C3 /* NPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD89DD244070860085A5C3 /* NPBaseViewController.swift */; };
+		B7D261B724566F190030EF30 /* NPDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D261B624566F190030EF30 /* NPDevice.swift */; };
 		B7DD80F9243DA584004A045D /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD80F6243DA584004A045D /* Observable+Response.swift */; };
 		B7DD80FA243DA584004A045D /* MoyaProvider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD80F7243DA584004A045D /* MoyaProvider+Rx.swift */; };
 		B7DD80FB243DA584004A045D /* Single+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD80F8243DA584004A045D /* Single+Response.swift */; };
@@ -53,7 +57,11 @@
 		B77B83DF243DC8750088E273 /* NetworkIndicatorPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkIndicatorPlugin.swift; sourceTree = "<group>"; };
 		B792E7F9244412F200703E68 /* NPAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPAlert.swift; sourceTree = "<group>"; };
 		B7C8495924503F9D002089B9 /* NPDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPDebug.swift; sourceTree = "<group>"; };
+		B7CD559A24581FBB00C115E9 /* Reachability+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reachability+Rx.swift"; sourceTree = "<group>"; };
+		B7CD559B24581FBB00C115E9 /* ObservableType+Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+Reachability.swift"; sourceTree = "<group>"; };
+		B7CD559E24581FCA00C115E9 /* UIColor+Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additional.swift"; sourceTree = "<group>"; };
 		B7CD89DD244070860085A5C3 /* NPBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPBaseViewController.swift; sourceTree = "<group>"; };
+		B7D261B624566F190030EF30 /* NPDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPDevice.swift; sourceTree = "<group>"; };
 		B7DD80F6243DA584004A045D /* Observable+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Response.swift"; sourceTree = "<group>"; };
 		B7DD80F7243DA584004A045D /* MoyaProvider+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Rx.swift"; sourceTree = "<group>"; };
 		B7DD80F8243DA584004A045D /* Single+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+Response.swift"; sourceTree = "<group>"; };
@@ -97,9 +105,10 @@
 		B73F739B2435DBA500C70017 /* NPBaseKit */ = {
 			isa = PBXGroup;
 			children = (
+				B7D261B524566EF40030EF30 /* NPTool */,
 				B7C8495824503F93002089B9 /* NPDebug */,
 				B7CD89DC244070750085A5C3 /* NPBase */,
-				B73F743C24370EBE00C70017 /* UI */,
+				B73F743C24370EBE00C70017 /* NPUI */,
 				B73F73A42435E27500C70017 /* NPCategory */,
 				B73F73A92435E27600C70017 /* NPConst */,
 				B73F73AF2435E27600C70017 /* NPNetwork */,
@@ -122,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				B73F73A62435E27500C70017 /* UIImage+Additional.swift */,
+				B7CD559E24581FCA00C115E9 /* UIColor+Additional.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -150,6 +160,7 @@
 		B73F73AF2435E27600C70017 /* NPNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				B7CD5593245816E000C115E9 /* RxReachability */,
 				B7DD80EF243DA3E0004A045D /* RxMoya */,
 				B73F73B02435E27600C70017 /* core */,
 				B73F73B12435E27600C70017 /* plugins */,
@@ -177,13 +188,13 @@
 			path = plugins;
 			sourceTree = "<group>";
 		};
-		B73F743C24370EBE00C70017 /* UI */ = {
+		B73F743C24370EBE00C70017 /* NPUI */ = {
 			isa = PBXGroup;
 			children = (
 				B792E7F82444123300703E68 /* NPAlertView */,
 				B73F743D24370EC700C70017 /* NPNavigationBar */,
 			);
-			path = UI;
+			path = NPUI;
 			sourceTree = "<group>";
 		};
 		B73F743D24370EC700C70017 /* NPNavigationBar */ = {
@@ -211,12 +222,29 @@
 			path = NPDebug;
 			sourceTree = "<group>";
 		};
+		B7CD5593245816E000C115E9 /* RxReachability */ = {
+			isa = PBXGroup;
+			children = (
+				B7CD559B24581FBB00C115E9 /* ObservableType+Reachability.swift */,
+				B7CD559A24581FBB00C115E9 /* Reachability+Rx.swift */,
+			);
+			path = RxReachability;
+			sourceTree = "<group>";
+		};
 		B7CD89DC244070750085A5C3 /* NPBase */ = {
 			isa = PBXGroup;
 			children = (
 				B7CD89DD244070860085A5C3 /* NPBaseViewController.swift */,
 			);
 			path = NPBase;
+			sourceTree = "<group>";
+		};
+		B7D261B524566EF40030EF30 /* NPTool */ = {
+			isa = PBXGroup;
+			children = (
+				B7D261B624566F190030EF30 /* NPDevice.swift */,
+			);
+			path = NPTool;
 			sourceTree = "<group>";
 		};
 		B7DD80EF243DA3E0004A045D /* RxMoya */ = {
@@ -354,15 +382,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7CD559F24581FCA00C115E9 /* UIColor+Additional.swift in Sources */,
 				B7CD89DE244070860085A5C3 /* NPBaseViewController.swift in Sources */,
 				B73F73B62435E27600C70017 /* NPPlateformKey.swift in Sources */,
+				B7CD559C24581FBB00C115E9 /* Reachability+Rx.swift in Sources */,
 				B77B83E0243DC8750088E273 /* NetworkIndicatorPlugin.swift in Sources */,
 				B792E7FA244412F200703E68 /* NPAlert.swift in Sources */,
+				B7CD559D24581FBB00C115E9 /* ObservableType+Reachability.swift in Sources */,
 				B77B83DE243DBE480088E273 /* TargetType+Rx.swift in Sources */,
 				B73F73B52435E27600C70017 /* NPSystemConst.swift in Sources */,
 				B7DF2427243EFB1500C2AF17 /* Dictionay+Additional.swift in Sources */,
 				B7DD80FF243DB0F8004A045D /* RXHandyJSON.swift in Sources */,
 				B7DD8101243DB2A8004A045D /* Network.swift in Sources */,
+				B7D261B724566F190030EF30 /* NPDevice.swift in Sources */,
 				B7DD80FA243DA584004A045D /* MoyaProvider+Rx.swift in Sources */,
 				B73F73B72435E27600C70017 /* NPColorAndFontConst.swift in Sources */,
 				B73F73B22435E27600C70017 /* UIImage+Additional.swift in Sources */,

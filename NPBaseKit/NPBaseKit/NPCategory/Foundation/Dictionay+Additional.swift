@@ -25,7 +25,7 @@ public extension Dictionary {
     /// 是否有某个键
     /// - Parameter key: 键
     /// - Returns: 布尔值
-    public func has(key: Key) -> Bool {
+    func has(key: Key) -> Bool {
         return index(forKey: key) != nil
     }
     

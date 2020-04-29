@@ -11,15 +11,22 @@ import NPBaseKit
 import NPHome
 import URLNavigator
 import CocoaDebug
+import Reachability
+import RxSwift
+import RxCocoa
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var navigator: NavigatorType?
+    var reachability: Reachability?
 
+    let disposeBag = DisposeBag()
+ 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+        IQKeyboardManager.shared.enable = true
         configRouter()
         configRootVC()
         configNetwork()
@@ -44,6 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Network.Configuration.default.timeoutInterval = 20
         let indicatorPlugin = NetworkIndicatorPlugin()
         Network.Configuration.default.plugins = [indicatorPlugin]
+         
+
     }
     
     func configRouter() {

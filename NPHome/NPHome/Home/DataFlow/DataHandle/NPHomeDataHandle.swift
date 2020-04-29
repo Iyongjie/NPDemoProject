@@ -26,7 +26,10 @@ class NPHomeDataHandle: NSObject {
         API.getRequestParamerDicApi(param, url).request().asObservable().mapResponseToObjectArray(type: NPHomeCarModel.self).subscribe(onNext: { (result) in
             block(result)
         }, onError: { (error) in
-            print("错误")
+
+//            if let e = error as? NPError {
+//                print(e)
+//            }
         }, onCompleted: {
             print("完成")
         }, onDisposed:  {

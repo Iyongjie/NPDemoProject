@@ -7,6 +7,7 @@ abstract_target 'NPDemoProject' do
 	# swift
 	pod 'RxSwift'
 	pod 'RxCocoa'
+  pod 'ReachabilitySwift'
 	pod 'Kingfisher'
 	pod 'SnapKit'
 	pod 'IQKeyboardManagerSwift'
