@@ -26,6 +26,7 @@
 		B7CD559C24581FBB00C115E9 /* Reachability+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD559A24581FBB00C115E9 /* Reachability+Rx.swift */; };
 		B7CD559D24581FBB00C115E9 /* ObservableType+Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD559B24581FBB00C115E9 /* ObservableType+Reachability.swift */; };
 		B7CD559F24581FCA00C115E9 /* UIColor+Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD559E24581FCA00C115E9 /* UIColor+Additional.swift */; };
+		B7CD55A52459860200C115E9 /* UIView+Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD55A42459860100C115E9 /* UIView+Additional.swift */; };
 		B7CD89DE244070860085A5C3 /* NPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD89DD244070860085A5C3 /* NPBaseViewController.swift */; };
 		B7D261B724566F190030EF30 /* NPDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D261B624566F190030EF30 /* NPDevice.swift */; };
 		B7DD80F9243DA584004A045D /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD80F6243DA584004A045D /* Observable+Response.swift */; };
@@ -60,6 +61,7 @@
 		B7CD559A24581FBB00C115E9 /* Reachability+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reachability+Rx.swift"; sourceTree = "<group>"; };
 		B7CD559B24581FBB00C115E9 /* ObservableType+Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+Reachability.swift"; sourceTree = "<group>"; };
 		B7CD559E24581FCA00C115E9 /* UIColor+Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additional.swift"; sourceTree = "<group>"; };
+		B7CD55A42459860100C115E9 /* UIView+Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additional.swift"; sourceTree = "<group>"; };
 		B7CD89DD244070860085A5C3 /* NPBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPBaseViewController.swift; sourceTree = "<group>"; };
 		B7D261B624566F190030EF30 /* NPDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPDevice.swift; sourceTree = "<group>"; };
 		B7DD80F6243DA584004A045D /* Observable+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Response.swift"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				B73F73A62435E27500C70017 /* UIImage+Additional.swift */,
 				B7CD559E24581FCA00C115E9 /* UIColor+Additional.swift */,
+				B7CD55A42459860100C115E9 /* UIView+Additional.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				B7DD80FD243DACCC004A045D /* API.swift in Sources */,
 				B73F73B42435E27600C70017 /* NPDeviceConst.swift in Sources */,
 				B73F744124370EED00C70017 /* NPNavigationBar.m in Sources */,
+				B7CD55A52459860200C115E9 /* UIView+Additional.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

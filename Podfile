@@ -14,6 +14,7 @@ abstract_target 'NPDemoProject' do
   pod 'Moya'
   pod 'HandyJSON'
   pod 'URLNavigator'
+  pod 'FWPopupView'
   
 	#oc
 	pod 'CYLTabBarController'

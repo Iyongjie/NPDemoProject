@@ -10,6 +10,7 @@ import UIKit
 import NPBaseKit
 import CYLTabBarController
 import URLNavigator
+import SnapKit
 
 public class NPHomeViewController: UIViewController {
     
@@ -26,9 +27,11 @@ public class NPHomeViewController: UIViewController {
     }()
     
     lazy var testLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: 100, y: 100, width: 150, height: 30))
+        let label = UILabel()
         label.textColor = HexColorAlpha("#F09")
         label.text = "123 火花 abdc"
+        label.backgroundColor = .yellow
+
         return label
     }()
     
@@ -107,5 +110,16 @@ extension NPHomeViewController: UITableViewDelegate, UITableViewDataSource {
             print("[Navigator] open: \(name)")
             self.navigator.open(name)
         }
+    }
+    
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        self.testLabel.snp.makeConstraints { (make) in
+            make.left.top.equalTo(100)
+            make.width.equalTo(150)
+            make.height.equalTo(30)
+        }
+        testLabel.makeCorner([.topLeft, .bottomRight], 15)
     }
 }
