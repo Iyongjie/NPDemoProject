@@ -8,9 +8,9 @@
 
 import UIKit
 
-class NPNavigationController: UINavigationController {
+open class NPNavigationController: UINavigationController {
 
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -25,7 +25,7 @@ class NPNavigationController: UINavigationController {
         return true
     }
     
-    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+    open override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         viewController.hidesBottomBarWhenPushed = viewControllers.count > 0 ? true : false
         super.pushViewController(viewController, animated: animated)
     }

@@ -28,17 +28,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
  
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         IQKeyboardManager.shared.enable = true
+        configTheme()
         configRouter()
         configRootVC()
         configNetwork()
         configDebug()
-        configTheme()
         return true
     }
     
     func configDebug() {
         #if DEBUG
         CocoaDebug.enable()
+        // 模拟器热重载
 //        Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle")?.load()
 //        
 //        @objc func injected(){
@@ -59,53 +60,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Network.Configuration.default.timeoutInterval = 20
         let indicatorPlugin = NetworkIndicatorPlugin()
         Network.Configuration.default.plugins = [indicatorPlugin]
-         
+        
+        // 添加请求头
+//        Network.Configuration.default.addingHeaders = { target in
+//            if target.path.contains("user") { return ["userId": "123456789"] }
+//            return [:]
+//        }
     }
     
     func configRouter() {
         let navigator = Navigator()
         self.navigator = navigator
-        // Initialize navigation map
+        // 初始化模块导航
         NavigationMap.initialize(navigator: navigator)
-
-    }
-    
-    func application(
-        _ app: UIApplication,
-        open url: URL,
-        options: [UIApplication.OpenURLOptionsKey: Any] = [:]
-    ) -> Bool {
-        // Try presenting the URL first
-        if self.navigator?.present(url, wrap: UINavigationController.self) != nil {
-            print("[Navigator] present: \(url)")
-            return true
-        }
-        
-        // Try opening the URL
-        if self.navigator?.open(url) == true {
-            print("[Navigator] open: \(url)")
-            return true
-        }
-        
-        return false
     }
     
     func configTheme() {
-        
-//        UIApplication.shared.theme_setStatusBarStyle("UIStatusBarStyle", animated: true)
-        
+
         if #available(iOS 13, *) {
             let style = UITraitCollection.current.userInterfaceStyle
             if style == .dark {
                 print("当前为暗黑模式")
-                ThemeManager.setTheme(jsonName: "dark_theme", path: .mainBundle)
+                NPThemes.switchTo(.night)
             } else {
                 print("当前为正常模式")
-                ThemeManager.setTheme(jsonName: "normal_theme", path: .mainBundle)
+                NPThemes.switchTo(.normal)
             }
         } else {
             print("不是iOS 13 ，不用适配暗黑模式")
         }
+        UIApplication.shared.theme_setStatusBarStyle("UIStatusBarStyle", animated: true)
+
     }
 }
 

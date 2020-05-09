@@ -27,9 +27,6 @@ class NPHomeDataHandle: NSObject {
             block(result)
         }, onError: { (error) in
 
-//            if let e = error as? NPError {
-//                print(e)
-//            }
         }, onCompleted: {
             print("完成")
         }, onDisposed:  {

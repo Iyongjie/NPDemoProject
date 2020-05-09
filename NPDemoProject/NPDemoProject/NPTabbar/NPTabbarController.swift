@@ -40,11 +40,11 @@ class NPTabbarController: CYLTabBarController {
     static func tabBarItemsAttributesForController() ->  [[String : String]] {
         
         let tabBarItemHome = [CYLTabBarItemTitle:"首页",
-                             CYLTabBarItemImage:"",
-                             CYLTabBarItemSelectedImage:""]
+                             CYLTabBarItemImage:"shouye",
+                             CYLTabBarItemSelectedImage:"shouye"]
         let tabBarItemMine = [CYLTabBarItemTitle:"我的",
-                              CYLTabBarItemImage:"",
-                              CYLTabBarItemSelectedImage:""]
+                              CYLTabBarItemImage:"shouye",
+                              CYLTabBarItemSelectedImage:"shouye"]
         let tabBarItemsAttributes = [tabBarItemHome, tabBarItemMine]
         return tabBarItemsAttributes
     }
@@ -53,7 +53,7 @@ class NPTabbarController: CYLTabBarController {
         self.tabBarHeight = CYLTabBarControllerHeight
         self.rootWindow().theme_backgroundColor = "Tabbar.backgroundColor"
         
-        self.tabBar.theme_backgroundColor = ["#FF69B4", "#000"]
+        self.tabBar.theme_backgroundColor = "Tabbar.backgroundColor"
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -65,11 +65,11 @@ class NPTabbarController: CYLTabBarController {
             }
             let color = UIColor { (traitCollection) -> UIColor in
                 if traitCollection.userInterfaceStyle == .dark {
-                    ThemeManager.setTheme(jsonName: "dark_theme", path: .mainBundle)
+                    NPThemes.switchTo(.night)
                     print("监听--暗黑模式")
                     return .black
                 } else {
-                    ThemeManager.setTheme(jsonName: "normal_theme", path: .mainBundle)
+                    NPThemes.switchTo(.normal)
                     print("监听--正常模式")
                     return .white
                 }

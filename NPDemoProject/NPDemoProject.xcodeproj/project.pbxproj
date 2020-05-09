@@ -17,9 +17,8 @@
 		B73F73BA2435E55500C70017 /* NPBaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F73B92435E55500C70017 /* NPBaseKit.framework */; };
 		B73F73D82435E9A900C70017 /* NPHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F73D72435E9A900C70017 /* NPHome.framework */; };
 		B73F73EA2435F42D00C70017 /* NPTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73E92435F42D00C70017 /* NPTabbarController.swift */; };
-		B73F73EC2435F95200C70017 /* NPNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73EB2435F95200C70017 /* NPNavigationController.swift */; };
-		B7A60F072462CACE00C481F5 /* normal_theme.json in Resources */ = {isa = PBXBuildFile; fileRef = B7A60F062462CACE00C481F5 /* normal_theme.json */; };
-		B7A60F092462CADE00C481F5 /* dark_theme.json in Resources */ = {isa = PBXBuildFile; fileRef = B7A60F082462CADD00C481F5 /* dark_theme.json */; };
+		B7A60F42246685B100C481F5 /* Night_theme.json in Resources */ = {isa = PBXBuildFile; fileRef = B7A60F40246685B000C481F5 /* Night_theme.json */; };
+		B7A60F43246685B100C481F5 /* Normal_theme.json in Resources */ = {isa = PBXBuildFile; fileRef = B7A60F41246685B000C481F5 /* Normal_theme.json */; };
 		B7C3546024627E5F0002D819 /* now_buy_clear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7C3545E24627E5F0002D819 /* now_buy_clear.jpg */; };
 		B7C3546124627E5F0002D819 /* add_cart_clear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7C3545F24627E5F0002D819 /* add_cart_clear.jpg */; };
 		B7CD89D5244066570085A5C3 /* NPMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CD89D4244066570085A5C3 /* NPMine.framework */; };
@@ -56,9 +55,8 @@
 		B73F73D72435E9A900C70017 /* NPHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NPHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73F73E52435EFB800C70017 /* NPDemoProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NPDemoProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		B73F73E92435F42D00C70017 /* NPTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPTabbarController.swift; sourceTree = "<group>"; };
-		B73F73EB2435F95200C70017 /* NPNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPNavigationController.swift; sourceTree = "<group>"; };
-		B7A60F062462CACE00C481F5 /* normal_theme.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = normal_theme.json; sourceTree = "<group>"; };
-		B7A60F082462CADD00C481F5 /* dark_theme.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dark_theme.json; sourceTree = "<group>"; };
+		B7A60F40246685B000C481F5 /* Night_theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Night_theme.json; sourceTree = "<group>"; };
+		B7A60F41246685B000C481F5 /* Normal_theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Normal_theme.json; sourceTree = "<group>"; };
 		B7C3545E24627E5F0002D819 /* now_buy_clear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = now_buy_clear.jpg; sourceTree = "<group>"; };
 		B7C3545F24627E5F0002D819 /* add_cart_clear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = add_cart_clear.jpg; sourceTree = "<group>"; };
 		B7CD89D4244066570085A5C3 /* NPMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NPMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				B73F73E92435F42D00C70017 /* NPTabbarController.swift */,
-				B73F73EB2435F95200C70017 /* NPNavigationController.swift */,
 			);
 			path = NPTabbar;
 			sourceTree = "<group>";
@@ -180,19 +177,11 @@
 			path = NPDemoProject;
 			sourceTree = "<group>";
 		};
-		B7A60EFD2462C64100C481F5 /* Themes */ = {
-			isa = PBXGroup;
-			children = (
-				B7A60F062462CACE00C481F5 /* normal_theme.json */,
-				B7A60F082462CADD00C481F5 /* dark_theme.json */,
-			);
-			path = Themes;
-			sourceTree = "<group>";
-		};
 		B7CD55872456A98000C115E9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B7A60EFD2462C64100C481F5 /* Themes */,
+				B7A60F40246685B000C481F5 /* Night_theme.json */,
+				B7A60F41246685B000C481F5 /* Normal_theme.json */,
 				B7C3545F24627E5F0002D819 /* add_cart_clear.jpg */,
 				B7C3545E24627E5F0002D819 /* now_buy_clear.jpg */,
 			);
@@ -296,12 +285,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7A60F43246685B100C481F5 /* Normal_theme.json in Resources */,
 				B73F73572435DB4100C70017 /* LaunchScreen.storyboard in Resources */,
 				B7C3546124627E5F0002D819 /* add_cart_clear.jpg in Resources */,
-				B7A60F092462CADE00C481F5 /* dark_theme.json in Resources */,
 				B7C3546024627E5F0002D819 /* now_buy_clear.jpg in Resources */,
 				B73F73542435DB4100C70017 /* Assets.xcassets in Resources */,
-				B7A60F072462CACE00C481F5 /* normal_theme.json in Resources */,
+				B7A60F42246685B100C481F5 /* Night_theme.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +390,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B70CDD112448B7DF00FD9340 /* NPNavigationMap.swift in Sources */,
-				B73F73EC2435F95200C70017 /* NPNavigationController.swift in Sources */,
 				B73F73EA2435F42D00C70017 /* NPTabbarController.swift in Sources */,
 				B73F734B2435DB3F00C70017 /* AppDelegate.swift in Sources */,
 			);

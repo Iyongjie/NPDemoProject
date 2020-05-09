@@ -9,6 +9,9 @@
 import Foundation
 import CoreTelephony
 
+
+/// 是否安装SIM卡
+/// - Returns: 布尔
 public func isSIMInstalled() -> Bool {
     let info = CTTelephonyNetworkInfo()
     let carrier = info.subscriberCellularProvider

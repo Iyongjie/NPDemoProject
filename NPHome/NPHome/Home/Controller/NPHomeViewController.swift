@@ -11,27 +11,28 @@ import NPBaseKit
 import CYLTabBarController
 import URLNavigator
 import SnapKit
+import SwiftTheme
 
-public class NPHomeViewController: UIViewController {
+public class NPHomeViewController: NPBaseViewController {
     
     let dataHandler = NPHomeDataHandle()
-    var results = [NPHomeCarModel]()
+    var results = [NPHomeCourseLayout]()
     let navigator: NavigatorType
 
     lazy var tableView: UITableView = {
         let table = UITableView(frame: self.view.frame, style: .plain)
         table.delegate = self
         table.dataSource = self
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cellid")
+        table.register(NPHomeCourseTableViewCell.self, forCellReuseIdentifier: "cellid")
         return table
     }()
     
     lazy var testLabel: UILabel = {
         let label = UILabel()
-        label.textColor = HexColorAlpha("#F09")
-        label.text = "123 火花 abdc"
-        label.backgroundColor = .yellow
-
+        label.text = "写个带阴影label"
+        label.theme_backgroundColor = "NPHomeViewController.testLabel.backgroundColor"
+        label.theme_textColor = "NPHomeViewController.testLabel.textColor"
+        label.textAlignment = .center
         return label
     }()
     
@@ -65,41 +66,31 @@ public class NPHomeViewController: UIViewController {
     
     func requestData() {
         dataHandler.requestHomeData { [weak self] (results) in
-            self?.results = results
+            // 数据回调
+            self?.results = NPHomeCourseLayout.initWithModels(models: results)
             self?.tableView.reloadData()
         }
     }
     
     func configUI() {
-        self.view.backgroundColor = kAppMainColor
-        self.view.addSubview(self.tableView)
+        addContentView()
+        self.contentView.addSubview(self.tableView)
         
         self.tableView.addSubview(self.backView)
         self.backView.addSubview(self.testLabel)
     }
-     
-    @objc func homeToMine() {
-        
-    }
-    @objc func injected() {
-        self.tableView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
-    }
 }
 
 extension NPHomeViewController: UITableViewDelegate, UITableViewDataSource {
-    public func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.results.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellid", for: indexPath)
-        let model = results[indexPath.row]
-        cell.textLabel?.text = model.categoryName
-        cell.detailTextLabel?.text = model.createdAt
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellid", for: indexPath) as! NPHomeCourseTableViewCell
+        let layout = results[indexPath.row]
+        cell.textLabel?.text = layout.title
         return cell
     }
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -123,6 +114,10 @@ extension NPHomeViewController: UITableViewDelegate, UITableViewDataSource {
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
+        self.tableView.snp.makeConstraints {(make) in
+            make.left.top.right.bottom.equalTo(0)
+        }
+        
         self.backView.snp.makeConstraints { (make) in
             make.left.top.equalTo(100)
             make.width.equalTo(150)

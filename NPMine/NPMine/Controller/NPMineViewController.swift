@@ -11,25 +11,16 @@ import NPBaseKit
 import URLNavigator
 import SnapKit
 import FWPopupView
+import Kingfisher
 
 public class NPMineViewController: NPBaseViewController {
     
     let navigator: NavigatorType
-    
-    lazy var testButton: UIButton = {
-        let btn = UIButton(type: .custom)
-        btn.setTitle("杜兰特", for: .normal)
-        btn.setImage(UIImage(named: "shouye"), for: .normal)
-        btn.setTitleColor(.red, for: .normal)
-        btn.backgroundColor = .lightGray
-        
-        btn.addTarget(self, action: #selector(testClick), for: .touchUpInside)
-        return btn
-    }()
- 
+     
     lazy var testImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.setImage(from: "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3404129581,3734062752&fm=26&gp=0.jpg")
+        let imageUrl = URL(string: "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3404129581,3734062752&fm=26&gp=0.jpg")
+        imageView.kf.setImage(with: imageUrl)
         return imageView
     }()
     
@@ -68,8 +59,8 @@ public class NPMineViewController: NPBaseViewController {
     }
     
     func configUI()  {
-        self.view.backgroundColor = .yellow
-        self.view.addSubview(self.testButton)
+        self.view.backgroundColor = .lightGray
+        
         self.view.addSubview(self.testImageView)
          
         // 不规则按钮
@@ -109,17 +100,10 @@ public class NPMineViewController: NPBaseViewController {
     
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.testButton.snp.makeConstraints { (make) in
+        self.testImageView.snp.makeConstraints { (make) in
             make.left.top.equalTo(200)
             make.width.equalTo(45)
             make.height.equalTo(45)
-        }
-        self.testButton.layoutButton(.bottom, 10)
-
-        self.testImageView.snp.makeConstraints { (make) in
-            make.top.equalTo(self.testButton.snp_bottom)
-            make.centerX.equalTo(self.testButton)
-            make.width.height.equalTo(100)
         }
     }
     
