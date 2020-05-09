@@ -35,6 +35,12 @@ public class NPHomeViewController: UIViewController {
         return label
     }()
     
+    lazy var backView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .clear
+        return view
+    }()
+    
     public init(navigator: NavigatorType) {
       self.navigator = navigator
       super.init(nibName: nil, bundle: nil)
@@ -67,7 +73,9 @@ public class NPHomeViewController: UIViewController {
     func configUI() {
         self.view.backgroundColor = kAppMainColor
         self.view.addSubview(self.tableView)
-        self.tableView.addSubview(self.testLabel)
+        
+        self.tableView.addSubview(self.backView)
+        self.backView.addSubview(self.testLabel)
     }
      
     @objc func homeToMine() {
@@ -115,11 +123,16 @@ extension NPHomeViewController: UITableViewDelegate, UITableViewDataSource {
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
-        self.testLabel.snp.makeConstraints { (make) in
+        self.backView.snp.makeConstraints { (make) in
             make.left.top.equalTo(100)
             make.width.equalTo(150)
             make.height.equalTo(30)
         }
+        self.testLabel.snp.makeConstraints { (make) in
+            make.left.top.bottom.right.equalTo(0)
+        }
+
+        backView.makeShadow(.red, 0.6, 10)
         testLabel.makeCorner([.topLeft, .bottomRight], 15)
     }
 }

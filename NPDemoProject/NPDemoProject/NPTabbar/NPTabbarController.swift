@@ -11,11 +11,16 @@ import CYLTabBarController
 import NPHome
 import NPMine
 import URLNavigator
+import SwiftTheme
+import NPBaseKit
+
+let CYLTabBarControllerHeight: CGFloat = IS_X_LATER ? 83.0 : 49.0
 
 class NPTabbarController: CYLTabBarController {
  
     static func initWithContext() -> NPTabbarController {
         let tabBarVC = NPTabbarController(viewControllers: NPTabbarController.viewControllers(), tabBarItemsAttributes: NPTabbarController.tabBarItemsAttributesForController())
+        tabBarVC.customizeTabBarAppearance()
         return tabBarVC
     }
   
@@ -43,5 +48,35 @@ class NPTabbarController: CYLTabBarController {
         let tabBarItemsAttributes = [tabBarItemHome, tabBarItemMine]
         return tabBarItemsAttributes
     }
-
+    
+    func customizeTabBarAppearance() {
+        self.tabBarHeight = CYLTabBarControllerHeight
+        self.rootWindow().theme_backgroundColor = "Tabbar.backgroundColor"
+        
+        self.tabBar.theme_backgroundColor = ["#FF69B4", "#000"]
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        if #available(iOS 13, *) {
+            let currentUserInterfaceStyle = UITraitCollection.current.userInterfaceStyle
+            guard currentUserInterfaceStyle != previousTraitCollection?.userInterfaceStyle else {
+                return
+            }
+            let color = UIColor { (traitCollection) -> UIColor in
+                if traitCollection.userInterfaceStyle == .dark {
+                    ThemeManager.setTheme(jsonName: "dark_theme", path: .mainBundle)
+                    print("监听--暗黑模式")
+                    return .black
+                } else {
+                    ThemeManager.setTheme(jsonName: "normal_theme", path: .mainBundle)
+                    print("监听--正常模式")
+                    return .white
+                }
+            }
+            self.view.backgroundColor = color
+        } else {
+            print("不是iOS 13 ，不用适配暗黑模式")
+        }
+    }
 }

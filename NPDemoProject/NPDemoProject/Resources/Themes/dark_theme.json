@@ -1,0 +1,17 @@
+{
+  "ListViewController": {
+    "separatorColor": "#ECF0F1"
+  },
+  "UIStatusBarStyle": "LightContent",
+  "Global": {
+    "textFont": "PingFangSC-Regular,30",
+    "textColor": "#ECF0F1",
+    "backgroundColor": "#292b38",
+    "barTintColor": "#01040D",
+    "barTextColor": "#FFF"
+  }
+  "Tabbar": {
+      "backgroundColor": "#BA55D3"
+  }
+}
+

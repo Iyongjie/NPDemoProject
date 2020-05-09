@@ -9,11 +9,45 @@
 import UIKit
 import NPBaseKit
 import URLNavigator
+import SnapKit
+import FWPopupView
 
 public class NPMineViewController: NPBaseViewController {
     
     let navigator: NavigatorType
+    
+    lazy var testButton: UIButton = {
+        let btn = UIButton(type: .custom)
+        btn.setTitle("杜兰特", for: .normal)
+        btn.setImage(UIImage(named: "shouye"), for: .normal)
+        btn.setTitleColor(.red, for: .normal)
+        btn.backgroundColor = .lightGray
+        
+        btn.addTarget(self, action: #selector(testClick), for: .touchUpInside)
+        return btn
+    }()
  
+    lazy var testImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.setImage(from: "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3404129581,3734062752&fm=26&gp=0.jpg")
+        return imageView
+    }()
+    
+    lazy var goodInfoPopupView: NPGoodInfoPopupView = {
+        let customPopupView = NPGoodInfoPopupView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.4))
+        
+        let vProperty = FWPopupViewProperty()
+        vProperty.popupCustomAlignment = .bottomCenter
+        vProperty.popupAnimationType = .position
+        vProperty.maskViewColor = UIColor(white: 0, alpha: 0.5)
+        vProperty.touchWildToHide = "1"
+        vProperty.popupViewEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        vProperty.animationDuration = 0.2
+        vProperty.usingSpringWithDamping = 0.6
+        customPopupView.vProperty = vProperty
+        return customPopupView
+    }()
+    
     public init(navigator: NavigatorType) {
       self.navigator = navigator
       super.init(nibName: nil, bundle: nil)
@@ -30,11 +64,66 @@ public class NPMineViewController: NPBaseViewController {
     
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        navigationController?.navigationBar.isHidden = true
     }
     
     func configUI()  {
         self.view.backgroundColor = .yellow
+        self.view.addSubview(self.testButton)
+        self.view.addSubview(self.testImageView)
+         
+        // 不规则按钮
+        let addBtn = NPShapeImageButton(type: .custom)
+        addBtn.frame = CGRect(x: 50, y: 300, width: 100, height: 50)
+        addBtn.setImage(UIImage(named: "add_cart_clear.jpg"), for: .normal)
+        addBtn.addTarget(self, action: #selector(addAction), for: .touchUpInside)
+        self.view.addSubview(addBtn)
+        
+        let buyBtn = NPShapeImageButton(type: .custom)
+        buyBtn.frame = CGRect(x: 135, y: 300, width: 100, height: 50)
+        buyBtn.setImage(UIImage(named: "now_buy_clear.jpg"), for: .normal)
+        buyBtn.addTarget(self, action: #selector(buyAction), for: .touchUpInside)
+        self.view.addSubview(buyBtn)
     }
+    
+    @objc func addAction() {
+        print("添加购物车")
+        goodInfoPopupView.show()
+    }
+    @objc func buyAction() {
+        print("立即购买")
+        let customPopupView = NPPayPopupView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.4))
+        
+        let vProperty = FWPopupViewProperty()
+        vProperty.popupCustomAlignment = .bottomCenter
+        vProperty.popupAnimationType = .position
+        vProperty.maskViewColor = UIColor(white: 0, alpha: 0.5)
+        vProperty.touchWildToHide = "1"
+        vProperty.popupViewEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        vProperty.animationDuration = 0.2
+        vProperty.usingSpringWithDamping = 0.6
+        customPopupView.vProperty = vProperty
+        
+        customPopupView.show()
+    }
+    
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.testButton.snp.makeConstraints { (make) in
+            make.left.top.equalTo(200)
+            make.width.equalTo(45)
+            make.height.equalTo(45)
+        }
+        self.testButton.layoutButton(.bottom, 10)
 
+        self.testImageView.snp.makeConstraints { (make) in
+            make.top.equalTo(self.testButton.snp_bottom)
+            make.centerX.equalTo(self.testButton)
+            make.width.height.equalTo(100)
+        }
+    }
+    
+    @objc func testClick() {
+        print("11111111")
+    }
 }
