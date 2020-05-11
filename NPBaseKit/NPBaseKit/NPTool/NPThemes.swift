@@ -25,7 +25,7 @@ public enum NPThemes {
         switch theme {
             case .normal :
                 ThemeManager.setTheme(jsonName: "Normal_theme", path: .mainBundle)
-            case .night : 
+            case .night :
                 ThemeManager.setTheme(jsonName: "Night_theme", path: .mainBundle)
         }
     }

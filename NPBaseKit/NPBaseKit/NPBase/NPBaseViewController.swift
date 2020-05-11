@@ -17,6 +17,7 @@ open class NPBaseViewController: UIViewController {
     open override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.theme_backgroundColor = "Global.ViewControllerBackgroundColor"
     }
     
     open func addNavigationBar() {
@@ -30,7 +31,7 @@ open class NPBaseViewController: UIViewController {
     
     open func addContentView() {
         contentView = UIView(frame: CGRect(x: 0, y: kNavigationBarHeight, width: self.view.frame.width, height: self.view.frame.height - kNavigationBarHeight))
-        contentView.backgroundColor = .yellow
+        contentView.backgroundColor = .white
         self.view.addSubview(contentView)
     }
 

@@ -59,7 +59,6 @@ public class NPMineViewController: NPBaseViewController {
     }
     
     func configUI()  {
-        self.view.backgroundColor = .lightGray
         
         self.view.addSubview(self.testImageView)
          

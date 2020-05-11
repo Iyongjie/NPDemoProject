@@ -8,7 +8,7 @@
 * 请看忽略文件， 比如pods目录是不需要提交的
 * 项目目录必须与真实目录一致
 * pods包含常用的第三方库
-* 每个模块包含数据处理层、视图处理层、控制器层，MVC的优化为了业务解耦
+* 每个模块包含数据处理层、视图处理层、控制器层，为了业务解耦
 ![](design.png)
 
 ## 多工程联编  
@@ -26,7 +26,8 @@
 ## 关于主题  
 采用了第三方库[SwiftThemes](https://github.com/wxxsw/SwiftTheme) ，同时适配暗黑模式  
 1. 当业务对主题需求不大，仅适配暗黑模式，可以使用Index Mode  
-2. 为了业务扩展，这里采用了Json mode，不仅支持暗黑模式，还支持多种主题切换，目前只使用了Normal_theme
+2. 为了业务扩展，这里采用了Json mode，不仅支持暗黑模式，还支持多种主题切换，目前只使用了Normal_theme  
+3. 不要直接使用textColor和backgroundColor等，使用这种带主题切换的theme_backgroundColor
 
 ## Unit Test
 **说明：**

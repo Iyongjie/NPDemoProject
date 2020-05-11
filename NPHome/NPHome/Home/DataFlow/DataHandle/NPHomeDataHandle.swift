@@ -28,9 +28,7 @@ class NPHomeDataHandle: NSObject {
         }, onError: { (error) in
 
         }, onCompleted: {
-            print("完成")
         }, onDisposed:  {
-            print("释放了")
         }).disposed(by: disposeBag)
     }
 }

@@ -80,10 +80,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 13, *) {
             let style = UITraitCollection.current.userInterfaceStyle
             if style == .dark {
-                print("当前为暗黑模式")
                 NPThemes.switchTo(.night)
             } else {
-                print("当前为正常模式")
                 NPThemes.switchTo(.normal)
             }
         } else {
