@@ -16,6 +16,7 @@ abstract_target 'NPDemoProject' do
   pod 'URLNavigator'
   pod 'FWPopupView'
   pod 'SwiftTheme'
+  pod 'ActiveLabel'
   
 	#oc
 	pod 'CYLTabBarController'

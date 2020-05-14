@@ -51,8 +51,6 @@ class NPTabbarController: CYLTabBarController {
     
     func customizeTabBarAppearance() {
         self.tabBarHeight = CYLTabBarControllerHeight
-//        self.rootWindow().theme_backgroundColor = "Tabbar.backgroundColor"
-        
         self.tabBar.theme_backgroundColor = "Tabbar.backgroundColor"
     }
     

@@ -59,28 +59,27 @@ public class NPMineViewController: NPBaseViewController {
     }
     
     func configUI()  {
-        
-        self.view.addSubview(self.testImageView)
-         
+        self.contentView.addSubview(self.testImageView)
         // 不规则按钮
         let addBtn = NPShapeImageButton(type: .custom)
         addBtn.frame = CGRect(x: 50, y: 300, width: 100, height: 50)
         addBtn.setImage(UIImage(named: "add_cart_clear.jpg"), for: .normal)
         addBtn.addTarget(self, action: #selector(addAction), for: .touchUpInside)
-        self.view.addSubview(addBtn)
+        self.contentView.addSubview(addBtn)
+        addBtn.clickDurationTime = 0.1
         
         let buyBtn = NPShapeImageButton(type: .custom)
         buyBtn.frame = CGRect(x: 135, y: 300, width: 100, height: 50)
         buyBtn.setImage(UIImage(named: "now_buy_clear.jpg"), for: .normal)
-        buyBtn.addTarget(self, action: #selector(buyAction), for: .touchUpInside)
-        self.view.addSubview(buyBtn)
+        buyBtn.addTarget(self, action: #selector(buyAction(sender:)), for: .touchUpInside)
+        self.contentView.addSubview(buyBtn)
     }
     
     @objc func addAction() {
         print("添加购物车")
         goodInfoPopupView.show()
     }
-    @objc func buyAction() {
+    @objc func buyAction(sender: UIButton) {
         print("立即购买")
         let customPopupView = NPPayPopupView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.4))
         

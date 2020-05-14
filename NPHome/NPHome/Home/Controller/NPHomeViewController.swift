@@ -73,12 +73,13 @@ public class NPHomeViewController: NPBaseViewController {
     }
     
     func configUI() {
-        addContentView()
+        addNavigationBar()
         self.contentView.addSubview(self.tableView)
-        
         self.tableView.addSubview(self.backView)
         self.backView.addSubview(self.testLabel)
+        
     }
+
 }
 
 extension NPHomeViewController: UITableViewDelegate, UITableViewDataSource {

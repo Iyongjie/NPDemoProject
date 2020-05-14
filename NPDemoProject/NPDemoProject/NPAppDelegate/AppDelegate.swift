@@ -27,13 +27,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let disposeBag = DisposeBag()
  
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        IQKeyboardManager.shared.enable = true
+        configBasic()
         configTheme()
         configRouter()
         configRootVC()
         configNetwork()
         configDebug()
         return true
+    }
+    
+    func configBasic() {
+        // 键盘自动隐藏
+        IQKeyboardManager.shared.enable = true
+        // 防止暴力点击，如果不需要，可设置间隔为0.1
+        UIButton.initializeOnceMethod()
     }
     
     func configDebug() {

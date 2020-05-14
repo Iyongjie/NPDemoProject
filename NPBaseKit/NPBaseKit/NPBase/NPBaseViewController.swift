@@ -7,32 +7,55 @@
 //
 
 import UIKit
+import SnapKit
 
 open class NPBaseViewController: UIViewController {
     
-    open var contentView = UIView()
+    open var contentView: UIView!
     
-    open var navigationBar = NPNavigationBar()
+    open var navigationBar: NPNavigationBar!
     
     open override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.view.theme_backgroundColor = "Global.ViewControllerBackgroundColor"
+        addContentView()
     }
     
     open func addNavigationBar() {
-    
+        navigationBar = NPNavigationBar.npNavigtionBar()
+        self.view.addSubview(navigationBar)
     }
     
     open func removeNavigationBar() {
-        self.navigationBar.removeFromSuperview()
-        self.contentView.frame = self.view.frame
+        if self.navigationBar != nil {
+            self.navigationBar.removeFromSuperview()
+            self.navigationBar = nil
+        }
     }
     
     open func addContentView() {
-        contentView = UIView(frame: CGRect(x: 0, y: kNavigationBarHeight, width: self.view.frame.width, height: self.view.frame.height - kNavigationBarHeight))
+        contentView = UIView()
         contentView.backgroundColor = .white
         self.view.addSubview(contentView)
     }
 
+    open override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        let haveNavigationBar = self.navigationBar != nil
+        print("------\(haveNavigationBar)")
+        if haveNavigationBar {
+            navigationBar.snp.makeConstraints { (make) in
+                make.top.left.right.equalToSuperview()
+                make.height.equalTo(kNavigationBarHeight)
+            }
+            contentView.snp.makeConstraints { (make) in
+                make.top.equalTo(navigationBar.snp.bottom)
+                make.left.bottom.right.equalToSuperview()
+            }
+        } else {
+            contentView.snp.makeConstraints { (make) in
+                make.top.left.bottom.right.equalToSuperview()
+            }
+        }
+    }
 }
