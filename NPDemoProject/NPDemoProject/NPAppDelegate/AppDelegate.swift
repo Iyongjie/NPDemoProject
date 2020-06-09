@@ -73,6 +73,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            if target.path.contains("user") { return ["userId": "123456789"] }
 //            return [:]
 //        }
+        print(wifiIP())
+        print(deviceIP())
+        
     }
     
     func configRouter() {
@@ -92,6 +95,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 NPThemes.switchTo(.normal)
             }
         } else {
+            NPThemes.switchTo(.normal)
             print("不是iOS 13 ，不用适配暗黑模式")
         }
         UIApplication.shared.theme_setStatusBarStyle("UIStatusBarStyle", animated: true)

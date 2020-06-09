@@ -16,11 +16,13 @@ abstract_target 'NPDemoProject' do
   pod 'URLNavigator'
   pod 'FWPopupView'
   pod 'SwiftTheme'
-  pod 'ActiveLabel'
+  pod 'JXSegmentedView'
+  pod 'JXBanner'
   
 	#oc
 	pod 'CYLTabBarController'
 	pod 'LYEmptyView'
+  pod 'MJRefresh'
   
   #debug
   pod 'CocoaDebug', :configurations => ['Debug']

@@ -42,7 +42,6 @@ open class NPBaseViewController: UIViewController {
     open override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         let haveNavigationBar = self.navigationBar != nil
-        print("------\(haveNavigationBar)")
         if haveNavigationBar {
             navigationBar.snp.makeConstraints { (make) in
                 make.top.left.right.equalToSuperview()

@@ -13,11 +13,12 @@
  sender.isFinishEvent = true
  模拟网络请求回调
  DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + 5) {
-     print("可以用了")
-     sender.isFinishEvent = false
+ print("可以用了")
+ sender.isFinishEvent = false
  }
  */
 import Foundation
+import UIKit
 
 let defaultDuration: TimeInterval = 1
 

@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		598692A8B38A14AB258215CB /* Pods_NPDemoProject_NPBaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBB4A7ADF790ABEBBA6BE5F /* Pods_NPDemoProject_NPBaseKit.framework */; };
 		B73F739E2435DBA500C70017 /* NPBaseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B73F739C2435DBA500C70017 /* NPBaseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B73F73B22435E27600C70017 /* UIImage+NPAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73A62435E27500C70017 /* UIImage+NPAdditional.swift */; };
-		B73F73B32435E27600C70017 /* String+Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73A82435E27500C70017 /* String+Additional.swift */; };
 		B73F73B42435E27600C70017 /* NPDeviceConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73AA2435E27600C70017 /* NPDeviceConst.swift */; };
 		B73F73B52435E27600C70017 /* NPSystemConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73AB2435E27600C70017 /* NPSystemConst.swift */; };
 		B73F73B62435E27600C70017 /* NPPlateformKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F73AC2435E27600C70017 /* NPPlateformKey.swift */; };
@@ -19,20 +17,34 @@
 		B77B83DC243DBDA10088E273 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B83DB243DBDA10088E273 /* Configuration.swift */; };
 		B77B83DE243DBE480088E273 /* TargetType+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B83DD243DBE480088E273 /* TargetType+Rx.swift */; };
 		B77B83E0243DC8750088E273 /* NetworkIndicatorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B83DF243DC8750088E273 /* NetworkIndicatorPlugin.swift */; };
-		B792E7FA244412F200703E68 /* NPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B792E7F9244412F200703E68 /* NPAlert.swift */; };
+		B7827482248F7B7A00837D69 /* NPNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7827470248F7B7A00837D69 /* NPNavigationBar.swift */; };
+		B7827485248F7B7A00837D69 /* NPTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7827475248F7B7A00837D69 /* NPTextView.swift */; };
+		B7827486248F7B7A00837D69 /* NPRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B7827477248F7B7A00837D69 /* NPRefreshHeader.m */; };
+		B7827487248F7B7A00837D69 /* NPRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B7827478248F7B7A00837D69 /* NPRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7827488248F7B7A00837D69 /* ActiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B782747B248F7B7A00837D69 /* ActiveLabel.swift */; };
+		B7827489248F7B7A00837D69 /* RegexParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B782747C248F7B7A00837D69 /* RegexParser.swift */; };
+		B782748A248F7B7A00837D69 /* StringTrimExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B782747D248F7B7A00837D69 /* StringTrimExtension.swift */; };
+		B782748B248F7B7A00837D69 /* ActiveBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B782747E248F7B7A00837D69 /* ActiveBuilder.swift */; };
+		B782748C248F7B7A00837D69 /* ActiveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B782747F248F7B7A00837D69 /* ActiveType.swift */; };
+		B782748D248F7B7A00837D69 /* NPTopAliginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7827481248F7B7A00837D69 /* NPTopAliginLabel.swift */; };
+		B782749B248F887E00837D69 /* UIImageView+NPGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = B782748F248F887E00837D69 /* UIImageView+NPGIF.m */; };
+		B782749C248F887E00837D69 /* UIButton+NPAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7827490248F887E00837D69 /* UIButton+NPAdditional.swift */; };
+		B782749D248F887E00837D69 /* UIView+NPAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7827491248F887E00837D69 /* UIView+NPAdditional.swift */; };
+		B782749E248F887E00837D69 /* UIColor+NPAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7827492248F887E00837D69 /* UIColor+NPAdditional.swift */; };
+		B782749F248F887E00837D69 /* UIImageView+NPGIF.h in Headers */ = {isa = PBXBuildFile; fileRef = B7827493248F887E00837D69 /* UIImageView+NPGIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B78274A0248F887E00837D69 /* UIImage+NPAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7827494248F887E00837D69 /* UIImage+NPAdditional.swift */; };
+		B78274A1248F887E00837D69 /* UIButton+NPTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7827495248F887E00837D69 /* UIButton+NPTimeInterval.swift */; };
+		B78274A2248F887E00837D69 /* Dictionay+Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7827497248F887E00837D69 /* Dictionay+Additional.swift */; };
+		B78274A3248F887E00837D69 /* String+Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7827498248F887E00837D69 /* String+Additional.swift */; };
+		B78274A4248F887E00837D69 /* SnapKit+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = B782749A248F887E00837D69 /* SnapKit+Array.swift */; };
 		B7A60F1924665DA300C481F5 /* NPNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A60F1824665DA300C481F5 /* NPNavigationController.swift */; };
 		B7A60F332466806800C481F5 /* NPThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A60F322466806800C481F5 /* NPThemes.swift */; };
-		B7A60FA6246A4F6900C481F5 /* NPNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A60FA5246A4F6900C481F5 /* NPNavigationBar.swift */; };
 		B7A60FD0246BA19E00C481F5 /* NPUserDefaultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A60FCF246BA19D00C481F5 /* NPUserDefaultWrapper.swift */; };
-		B7A60FDC246BD81F00C481F5 /* UIButton+NPTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A60FDB246BD81F00C481F5 /* UIButton+NPTimeInterval.swift */; };
 		B7C3545724627CF40002D819 /* NPShapeImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B7C3545324627CF30002D819 /* NPShapeImageButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7C3545824627CF40002D819 /* NPShapeImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C3545424627CF30002D819 /* NPShapeImageButton.m */; };
 		B7C8495A24503F9D002089B9 /* NPDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C8495924503F9D002089B9 /* NPDebug.swift */; };
 		B7CD559C24581FBB00C115E9 /* Reachability+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD559A24581FBB00C115E9 /* Reachability+Rx.swift */; };
 		B7CD559D24581FBB00C115E9 /* ObservableType+Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD559B24581FBB00C115E9 /* ObservableType+Reachability.swift */; };
-		B7CD559F24581FCA00C115E9 /* UIColor+NPAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD559E24581FCA00C115E9 /* UIColor+NPAdditional.swift */; };
-		B7CD55A52459860200C115E9 /* UIView+NPAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD55A42459860100C115E9 /* UIView+NPAdditional.swift */; };
-		B7CD55A7245A668400C115E9 /* UIButton+NPAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD55A6245A668300C115E9 /* UIButton+NPAdditional.swift */; };
 		B7CD89DE244070860085A5C3 /* NPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD89DD244070860085A5C3 /* NPBaseViewController.swift */; };
 		B7D261B724566F190030EF30 /* NPDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D261B624566F190030EF30 /* NPDevice.swift */; };
 		B7DD80F9243DA584004A045D /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD80F6243DA584004A045D /* Observable+Response.swift */; };
@@ -41,7 +53,6 @@
 		B7DD80FD243DACCC004A045D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD80FC243DACCC004A045D /* API.swift */; };
 		B7DD80FF243DB0F8004A045D /* RXHandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD80FE243DB0F8004A045D /* RXHandyJSON.swift */; };
 		B7DD8101243DB2A8004A045D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD8100243DB2A8004A045D /* Network.swift */; };
-		B7DF2427243EFB1500C2AF17 /* Dictionay+Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DF2426243EFB1500C2AF17 /* Dictionay+Additional.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +61,6 @@
 		B73F73992435DBA500C70017 /* NPBaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NPBaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73F739C2435DBA500C70017 /* NPBaseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPBaseKit.h; sourceTree = "<group>"; };
 		B73F739D2435DBA500C70017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B73F73A62435E27500C70017 /* UIImage+NPAdditional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+NPAdditional.swift"; sourceTree = "<group>"; };
-		B73F73A82435E27500C70017 /* String+Additional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Additional.swift"; sourceTree = "<group>"; };
 		B73F73AA2435E27600C70017 /* NPDeviceConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPDeviceConst.swift; sourceTree = "<group>"; };
 		B73F73AB2435E27600C70017 /* NPSystemConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPSystemConst.swift; sourceTree = "<group>"; };
 		B73F73AC2435E27600C70017 /* NPPlateformKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPPlateformKey.swift; sourceTree = "<group>"; };
@@ -60,20 +69,34 @@
 		B77B83DB243DBDA10088E273 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		B77B83DD243DBE480088E273 /* TargetType+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetType+Rx.swift"; sourceTree = "<group>"; };
 		B77B83DF243DC8750088E273 /* NetworkIndicatorPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkIndicatorPlugin.swift; sourceTree = "<group>"; };
-		B792E7F9244412F200703E68 /* NPAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPAlert.swift; sourceTree = "<group>"; };
+		B7827470248F7B7A00837D69 /* NPNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPNavigationBar.swift; sourceTree = "<group>"; };
+		B7827475248F7B7A00837D69 /* NPTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPTextView.swift; sourceTree = "<group>"; };
+		B7827477248F7B7A00837D69 /* NPRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPRefreshHeader.m; sourceTree = "<group>"; };
+		B7827478248F7B7A00837D69 /* NPRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPRefreshHeader.h; sourceTree = "<group>"; };
+		B782747B248F7B7A00837D69 /* ActiveLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveLabel.swift; sourceTree = "<group>"; };
+		B782747C248F7B7A00837D69 /* RegexParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexParser.swift; sourceTree = "<group>"; };
+		B782747D248F7B7A00837D69 /* StringTrimExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTrimExtension.swift; sourceTree = "<group>"; };
+		B782747E248F7B7A00837D69 /* ActiveBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveBuilder.swift; sourceTree = "<group>"; };
+		B782747F248F7B7A00837D69 /* ActiveType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveType.swift; sourceTree = "<group>"; };
+		B7827481248F7B7A00837D69 /* NPTopAliginLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPTopAliginLabel.swift; sourceTree = "<group>"; };
+		B782748F248F887E00837D69 /* UIImageView+NPGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+NPGIF.m"; sourceTree = "<group>"; };
+		B7827490248F887E00837D69 /* UIButton+NPAdditional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+NPAdditional.swift"; sourceTree = "<group>"; };
+		B7827491248F887E00837D69 /* UIView+NPAdditional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NPAdditional.swift"; sourceTree = "<group>"; };
+		B7827492248F887E00837D69 /* UIColor+NPAdditional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+NPAdditional.swift"; sourceTree = "<group>"; };
+		B7827493248F887E00837D69 /* UIImageView+NPGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+NPGIF.h"; sourceTree = "<group>"; };
+		B7827494248F887E00837D69 /* UIImage+NPAdditional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+NPAdditional.swift"; sourceTree = "<group>"; };
+		B7827495248F887E00837D69 /* UIButton+NPTimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+NPTimeInterval.swift"; sourceTree = "<group>"; };
+		B7827497248F887E00837D69 /* Dictionay+Additional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionay+Additional.swift"; sourceTree = "<group>"; };
+		B7827498248F887E00837D69 /* String+Additional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Additional.swift"; sourceTree = "<group>"; };
+		B782749A248F887E00837D69 /* SnapKit+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SnapKit+Array.swift"; sourceTree = "<group>"; };
 		B7A60F1824665DA300C481F5 /* NPNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPNavigationController.swift; sourceTree = "<group>"; };
 		B7A60F322466806800C481F5 /* NPThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPThemes.swift; sourceTree = "<group>"; };
-		B7A60FA5246A4F6900C481F5 /* NPNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPNavigationBar.swift; sourceTree = "<group>"; };
 		B7A60FCF246BA19D00C481F5 /* NPUserDefaultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NPUserDefaultWrapper.swift; path = NPBaseKit/NPBase/NPUserDefaultWrapper.swift; sourceTree = SOURCE_ROOT; };
-		B7A60FDB246BD81F00C481F5 /* UIButton+NPTimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+NPTimeInterval.swift"; sourceTree = "<group>"; };
 		B7C3545324627CF30002D819 /* NPShapeImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPShapeImageButton.h; sourceTree = "<group>"; };
 		B7C3545424627CF30002D819 /* NPShapeImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPShapeImageButton.m; sourceTree = "<group>"; };
 		B7C8495924503F9D002089B9 /* NPDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPDebug.swift; sourceTree = "<group>"; };
 		B7CD559A24581FBB00C115E9 /* Reachability+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reachability+Rx.swift"; sourceTree = "<group>"; };
 		B7CD559B24581FBB00C115E9 /* ObservableType+Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+Reachability.swift"; sourceTree = "<group>"; };
-		B7CD559E24581FCA00C115E9 /* UIColor+NPAdditional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+NPAdditional.swift"; sourceTree = "<group>"; };
-		B7CD55A42459860100C115E9 /* UIView+NPAdditional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NPAdditional.swift"; sourceTree = "<group>"; };
-		B7CD55A6245A668300C115E9 /* UIButton+NPAdditional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+NPAdditional.swift"; sourceTree = "<group>"; };
 		B7CD89DD244070860085A5C3 /* NPBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPBaseViewController.swift; sourceTree = "<group>"; };
 		B7D261B624566F190030EF30 /* NPDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPDevice.swift; sourceTree = "<group>"; };
 		B7DD80F6243DA584004A045D /* Observable+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Response.swift"; sourceTree = "<group>"; };
@@ -82,7 +105,6 @@
 		B7DD80FC243DACCC004A045D /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		B7DD80FE243DB0F8004A045D /* RXHandyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXHandyJSON.swift; sourceTree = "<group>"; };
 		B7DD8100243DB2A8004A045D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		B7DF2426243EFB1500C2AF17 /* Dictionay+Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionay+Additional.swift"; sourceTree = "<group>"; };
 		F3D7587D8A9D2965AD9EBF0A /* Pods-NPDemoProject-NPBaseKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPDemoProject-NPBaseKit.debug.xcconfig"; path = "Target Support Files/Pods-NPDemoProject-NPBaseKit/Pods-NPDemoProject-NPBaseKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,31 +157,11 @@
 		B73F73A42435E27500C70017 /* NPCategory */ = {
 			isa = PBXGroup;
 			children = (
-				B73F73A52435E27500C70017 /* UIKit */,
-				B73F73A72435E27500C70017 /* Foundation */,
+				B7827496248F887E00837D69 /* Foundation */,
+				B7827499248F887E00837D69 /* Lib */,
+				B782748E248F887E00837D69 /* UIKit */,
 			);
 			path = NPCategory;
-			sourceTree = "<group>";
-		};
-		B73F73A52435E27500C70017 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				B73F73A62435E27500C70017 /* UIImage+NPAdditional.swift */,
-				B7CD559E24581FCA00C115E9 /* UIColor+NPAdditional.swift */,
-				B7CD55A42459860100C115E9 /* UIView+NPAdditional.swift */,
-				B7CD55A6245A668300C115E9 /* UIButton+NPAdditional.swift */,
-				B7A60FDB246BD81F00C481F5 /* UIButton+NPTimeInterval.swift */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		B73F73A72435E27500C70017 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				B73F73A82435E27500C70017 /* String+Additional.swift */,
-				B7DF2426243EFB1500C2AF17 /* Dictionay+Additional.swift */,
-			);
-			path = Foundation;
 			sourceTree = "<group>";
 		};
 		B73F73A92435E27600C70017 /* NPConst */ = {
@@ -208,27 +210,98 @@
 		B73F743C24370EBE00C70017 /* NPUI */ = {
 			isa = PBXGroup;
 			children = (
+				B7827479248F7B7A00837D69 /* NPLabel */,
+				B782746F248F7B7A00837D69 /* NPNavigationBar */,
+				B7827476248F7B7A00837D69 /* NPRefresh */,
+				B7827474248F7B7A00837D69 /* NPTextView */,
 				B7C3545124627CD60002D819 /* NPShapeButton */,
-				B792E7F82444123300703E68 /* NPAlertView */,
-				B73F743D24370EC700C70017 /* NPNavigationBar */,
 			);
 			path = NPUI;
 			sourceTree = "<group>";
 		};
-		B73F743D24370EC700C70017 /* NPNavigationBar */ = {
+		B782746F248F7B7A00837D69 /* NPNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				B7A60FA5246A4F6900C481F5 /* NPNavigationBar.swift */,
+				B7827470248F7B7A00837D69 /* NPNavigationBar.swift */,
 			);
 			path = NPNavigationBar;
 			sourceTree = "<group>";
 		};
-		B792E7F82444123300703E68 /* NPAlertView */ = {
+		B7827474248F7B7A00837D69 /* NPTextView */ = {
 			isa = PBXGroup;
 			children = (
-				B792E7F9244412F200703E68 /* NPAlert.swift */,
+				B7827475248F7B7A00837D69 /* NPTextView.swift */,
 			);
-			path = NPAlertView;
+			path = NPTextView;
+			sourceTree = "<group>";
+		};
+		B7827476248F7B7A00837D69 /* NPRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				B7827478248F7B7A00837D69 /* NPRefreshHeader.h */,
+				B7827477248F7B7A00837D69 /* NPRefreshHeader.m */,
+			);
+			path = NPRefresh;
+			sourceTree = "<group>";
+		};
+		B7827479248F7B7A00837D69 /* NPLabel */ = {
+			isa = PBXGroup;
+			children = (
+				B782747A248F7B7A00837D69 /* ActiveLabel */,
+				B7827480248F7B7A00837D69 /* AlignLabel */,
+			);
+			path = NPLabel;
+			sourceTree = "<group>";
+		};
+		B782747A248F7B7A00837D69 /* ActiveLabel */ = {
+			isa = PBXGroup;
+			children = (
+				B782747B248F7B7A00837D69 /* ActiveLabel.swift */,
+				B782747C248F7B7A00837D69 /* RegexParser.swift */,
+				B782747D248F7B7A00837D69 /* StringTrimExtension.swift */,
+				B782747E248F7B7A00837D69 /* ActiveBuilder.swift */,
+				B782747F248F7B7A00837D69 /* ActiveType.swift */,
+			);
+			path = ActiveLabel;
+			sourceTree = "<group>";
+		};
+		B7827480248F7B7A00837D69 /* AlignLabel */ = {
+			isa = PBXGroup;
+			children = (
+				B7827481248F7B7A00837D69 /* NPTopAliginLabel.swift */,
+			);
+			path = AlignLabel;
+			sourceTree = "<group>";
+		};
+		B782748E248F887E00837D69 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B7827490248F887E00837D69 /* UIButton+NPAdditional.swift */,
+				B7827495248F887E00837D69 /* UIButton+NPTimeInterval.swift */,
+				B7827492248F887E00837D69 /* UIColor+NPAdditional.swift */,
+				B7827494248F887E00837D69 /* UIImage+NPAdditional.swift */,
+				B7827493248F887E00837D69 /* UIImageView+NPGIF.h */,
+				B782748F248F887E00837D69 /* UIImageView+NPGIF.m */,
+				B7827491248F887E00837D69 /* UIView+NPAdditional.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		B7827496248F887E00837D69 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B7827497248F887E00837D69 /* Dictionay+Additional.swift */,
+				B7827498248F887E00837D69 /* String+Additional.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		B7827499248F887E00837D69 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B782749A248F887E00837D69 /* SnapKit+Array.swift */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 		B7C3545124627CD60002D819 /* NPShapeButton */ = {
@@ -311,6 +384,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7827487248F7B7A00837D69 /* NPRefreshHeader.h in Headers */,
+				B782749F248F887E00837D69 /* UIImageView+NPGIF.h in Headers */,
 				B7C3545724627CF40002D819 /* NPShapeImageButton.h in Headers */,
 				B73F739E2435DBA500C70017 /* NPBaseKit.h in Headers */,
 			);
@@ -411,38 +486,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7CD559F24581FCA00C115E9 /* UIColor+NPAdditional.swift in Sources */,
 				B7CD89DE244070860085A5C3 /* NPBaseViewController.swift in Sources */,
 				B73F73B62435E27600C70017 /* NPPlateformKey.swift in Sources */,
+				B782749C248F887E00837D69 /* UIButton+NPAdditional.swift in Sources */,
 				B7A60F1924665DA300C481F5 /* NPNavigationController.swift in Sources */,
 				B7A60FD0246BA19E00C481F5 /* NPUserDefaultWrapper.swift in Sources */,
 				B7CD559C24581FBB00C115E9 /* Reachability+Rx.swift in Sources */,
+				B7827486248F7B7A00837D69 /* NPRefreshHeader.m in Sources */,
 				B77B83E0243DC8750088E273 /* NetworkIndicatorPlugin.swift in Sources */,
-				B792E7FA244412F200703E68 /* NPAlert.swift in Sources */,
+				B78274A2248F887E00837D69 /* Dictionay+Additional.swift in Sources */,
+				B782749E248F887E00837D69 /* UIColor+NPAdditional.swift in Sources */,
+				B78274A1248F887E00837D69 /* UIButton+NPTimeInterval.swift in Sources */,
+				B782748C248F7B7A00837D69 /* ActiveType.swift in Sources */,
 				B7CD559D24581FBB00C115E9 /* ObservableType+Reachability.swift in Sources */,
 				B77B83DE243DBE480088E273 /* TargetType+Rx.swift in Sources */,
 				B73F73B52435E27600C70017 /* NPSystemConst.swift in Sources */,
-				B7DF2427243EFB1500C2AF17 /* Dictionay+Additional.swift in Sources */,
-				B7A60FA6246A4F6900C481F5 /* NPNavigationBar.swift in Sources */,
 				B7DD80FF243DB0F8004A045D /* RXHandyJSON.swift in Sources */,
 				B7DD8101243DB2A8004A045D /* Network.swift in Sources */,
-				B7A60FDC246BD81F00C481F5 /* UIButton+NPTimeInterval.swift in Sources */,
 				B7D261B724566F190030EF30 /* NPDevice.swift in Sources */,
+				B782748B248F7B7A00837D69 /* ActiveBuilder.swift in Sources */,
+				B78274A4248F887E00837D69 /* SnapKit+Array.swift in Sources */,
 				B7DD80FA243DA584004A045D /* MoyaProvider+Rx.swift in Sources */,
 				B7C3545824627CF40002D819 /* NPShapeImageButton.m in Sources */,
+				B78274A3248F887E00837D69 /* String+Additional.swift in Sources */,
+				B7827489248F7B7A00837D69 /* RegexParser.swift in Sources */,
 				B73F73B72435E27600C70017 /* NPColorAndFontConst.swift in Sources */,
-				B73F73B22435E27600C70017 /* UIImage+NPAdditional.swift in Sources */,
-				B73F73B32435E27600C70017 /* String+Additional.swift in Sources */,
+				B78274A0248F887E00837D69 /* UIImage+NPAdditional.swift in Sources */,
+				B7827482248F7B7A00837D69 /* NPNavigationBar.swift in Sources */,
+				B782749D248F887E00837D69 /* UIView+NPAdditional.swift in Sources */,
+				B782749B248F887E00837D69 /* UIImageView+NPGIF.m in Sources */,
+				B782748D248F7B7A00837D69 /* NPTopAliginLabel.swift in Sources */,
+				B7827488248F7B7A00837D69 /* ActiveLabel.swift in Sources */,
 				B7DD80F9243DA584004A045D /* Observable+Response.swift in Sources */,
 				B73F73B82435E27600C70017 /* NPApi.swift in Sources */,
 				B7C8495A24503F9D002089B9 /* NPDebug.swift in Sources */,
-				B7CD55A7245A668400C115E9 /* UIButton+NPAdditional.swift in Sources */,
+				B7827485248F7B7A00837D69 /* NPTextView.swift in Sources */,
 				B77B83DC243DBDA10088E273 /* Configuration.swift in Sources */,
 				B7DD80FB243DA584004A045D /* Single+Response.swift in Sources */,
 				B7DD80FD243DACCC004A045D /* API.swift in Sources */,
 				B73F73B42435E27600C70017 /* NPDeviceConst.swift in Sources */,
 				B7A60F332466806800C481F5 /* NPThemes.swift in Sources */,
-				B7CD55A52459860200C115E9 /* UIView+NPAdditional.swift in Sources */,
+				B782748A248F7B7A00837D69 /* StringTrimExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,7 +666,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NPBaseKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -612,7 +696,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NPBaseKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -24,22 +24,10 @@ public class NPHomeViewController: NPBaseViewController {
         table.delegate = self
         table.dataSource = self
         table.register(NPHomeCourseTableViewCell.self, forCellReuseIdentifier: "cellid")
+        table.mj_header = NPRefreshHeader(refreshingBlock: {
+            print("123123")
+        })
         return table
-    }()
-    
-    lazy var testLabel: UILabel = {
-        let label = UILabel()
-        label.text = "写个带阴影label"
-        label.theme_backgroundColor = "NPHomeViewController.testLabel.backgroundColor"
-        label.theme_textColor = "NPHomeViewController.testLabel.textColor"
-        label.textAlignment = .center
-        return label
-    }()
-    
-    lazy var backView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .clear
-        return view
     }()
     
     public init(navigator: NavigatorType) {
@@ -75,9 +63,6 @@ public class NPHomeViewController: NPBaseViewController {
     func configUI() {
         addNavigationBar()
         self.contentView.addSubview(self.tableView)
-        self.tableView.addSubview(self.backView)
-        self.backView.addSubview(self.testLabel)
-        
     }
 
 }
@@ -118,17 +103,6 @@ extension NPHomeViewController: UITableViewDelegate, UITableViewDataSource {
         self.tableView.snp.makeConstraints {(make) in
             make.left.top.right.bottom.equalTo(0)
         }
-        
-        self.backView.snp.makeConstraints { (make) in
-            make.left.top.equalTo(100)
-            make.width.equalTo(150)
-            make.height.equalTo(30)
-        }
-        self.testLabel.snp.makeConstraints { (make) in
-            make.left.top.bottom.right.equalTo(0)
-        }
-
-        backView.makeShadow(.red, 0.6, 10)
-        testLabel.makeCorner([.topLeft, .bottomRight], 15)
+         
     }
 }

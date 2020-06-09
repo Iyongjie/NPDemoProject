@@ -12,12 +12,14 @@ import SnapKit
  
 public func kNPNavigationBarTop() -> CGFloat {
     var statusBarHeight: CGFloat = 0
-    if #available(iOS 13.0, *) {
-        let statusManager = UIApplication.shared.windows.first?.windowScene?.statusBarManager
-        statusBarHeight = CGFloat((statusManager?.statusBarFrame.height)!)
-    } else {
-        statusBarHeight = UIApplication.shared.statusBarFrame.size.height
-    }
+//    if #available(iOS 13.0, *) {
+//        let statusManager = UIApplication.shared.windows.first?.windowScene?.statusBarManager
+//        statusBarHeight = CGFloat((statusManager?.statusBarFrame.height)!)
+//    } else {
+//        statusBarHeight = UIApplication.shared.statusBarFrame.size.height
+//    }
+    statusBarHeight = UIApplication.shared.statusBarFrame.size.height
+
     return statusBarHeight
 }
 public let kNPNavigationBarHeight = (kNPNavigationBarTop() + 44.0)

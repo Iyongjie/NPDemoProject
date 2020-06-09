@@ -26,7 +26,7 @@ class NPHomeDataHandle: NSObject {
         API.getRequestParamerDicApi(param, url).request().asObservable().mapResponseToObjectArray(type: NPHomeCarModel.self).subscribe(onNext: { (result) in
             block(result)
         }, onError: { (error) in
-
+            print(error)
         }, onCompleted: {
         }, onDisposed:  {
         }).disposed(by: disposeBag)
